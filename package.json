@@ -1,0 +1,24 @@
+{
+  "name": "spacial-dynamics",
+  "version": "1.0.0",
+  "description": "Spacial Dynamics Latinoamerica website",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juandematei/spacial-dynamics.git"
+  },
+  "author": "Juan Dematei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juandematei/spacial-dynamics/issues"
+  },
+  "homepage": "https://github.com/juandematei/spacial-dynamics#readme"
+}
