@@ -1,10 +1,10 @@
 // Colors
-$primary-color:   #0156BC;
-$secondary-color: #BB4054;
+$primary-color:   #121ec3;
+$secondary-color: #ff0000;
 $text-color:      #555555;
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Lato|Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i|Merriweather');
 
 $primary-font:   'Merriweather', serif;
 $secondary-font: 'Lato', sans-serif;
@@ -34,6 +34,7 @@ body {
 // Titles
 h1 {
     font-family: $primary-font;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -41,6 +42,8 @@ h2 {
     font-family: $primary-font;
     font-size: 32px;
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 h3 {
@@ -48,15 +51,21 @@ h3 {
     font-family: $primary-font;
     font-size: 28px;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 // Navbar
 nav {
     background-color: #FFFFFF;
-    height: 90px;
+    height: 90px; // Total height 110px
     padding: 10px 0;
     position: sticky;
     top: 0;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+    z-index: 1;
 
     .logo {
         max-height: 90px;
@@ -110,6 +119,56 @@ nav {
 header {
     background-image: url(../img/PortadaFacebook-Mangrullos.jpg);
     background-size: cover;
-    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc( 100vh - 110px );
+
+    .welcome {
+        //background-color: pink;
+        color: #FFFFFF;
+        width: 50%;
+        position: absolute;
+        right: 0px;
+        top: 300px;
+    }
+}
+
+// Main
+main {
+    p, ul {
+        line-height: 2em;
+        margin-bottom: 1em;
+        font-style: italic;
+    }
+    
+    .circle-img {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        margin: 30px;
+        -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+    
+        &.circle-1 {
+            background-image: url(../img/SD1.png);
+        }
+        &.circle-2 {
+            background-image: url(../img/SD2.jpeg);
+        }
+        &.circle-3 {
+            background-image: url(../img/SD3.JPG);
+        }
+    }
+}
+
+// Footer
+footer {
+    padding: 30px 0;
+    background-color: $primary-color;
     color: #FFFFFF;
+    font-size: 12px;
 }
