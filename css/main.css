@@ -1,47 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Merriweather");
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1088px;
+  margin: 0 auto; }
+
 .clearfix::after {
   content: "";
   clear: both;
   display: table; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: "Lato", sans-serif;
+  color: #555555; }
 
-img {
-  max-width: 50%; }
+h1 {
+  font-family: "Merriweather", serif; }
 
 h2 {
-  color: red;
+  color: #0156BC;
+  font-family: "Merriweather", serif;
+  font-size: 32px;
   text-align: center; }
 
-header nav .logo {
-  float: left;
-  width: 200px; }
+h3 {
+  color: #555555;
+  font-family: "Merriweather", serif;
+  font-size: 28px;
+  text-align: center; }
 
-header nav .navbar {
-  float: right; }
+nav {
+  background-color: #FFFFFF;
+  height: 90px;
+  padding: 10px 0;
+  position: sticky;
+  top: 0; }
+  nav .logo {
+    max-height: 90px; }
+  nav .navbar {
+    float: right;
+    padding: 20px 0; }
+    nav .navbar a {
+      float: left;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #555555;
+      margin-left: 14px;
+      line-height: 50px;
+      font-size: 12px; }
+      nav .navbar a.active {
+        font-weight: bold; }
+        nav .navbar a.active:after {
+          content: "";
+          background-color: #BB4054;
+          height: 3px;
+          display: block;
+          visibility: visible;
+          transform: scaleX(1); }
+      nav .navbar a:after {
+        content: "";
+        background-color: #BB4054;
+        height: 3px;
+        display: block;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s; }
+      nav .navbar a:hover:after {
+        visibility: visible;
+        transform: scaleX(1); }
 
-.navbar a {
-  float: left;
-  margin-right: 10px; }
-
-.dropdown {
-  float: left;
-  overflow: hidden; }
-
-.dropdown-btn {
-  margin-right: 10px;
-  border: none; }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1; }
-  .dropdown-content a {
-    float: none;
-    display: block; }
-
-.dropdown-content a:hover {
-  background-color: #ddd; }
-
-.dropdown:hover .dropdown-content {
-  display: block; }
+header {
+  background-image: url(../img/PortadaFacebook-Mangrullos.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #FFFFFF; }
