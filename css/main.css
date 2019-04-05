@@ -51,34 +51,47 @@ nav {
   nav .navbar {
     float: right;
     padding: 20px 0; }
-    nav .navbar a {
-      float: left;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #555555;
-      margin-left: 14px;
+    nav .navbar li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 14px;
       line-height: 50px;
-      font-size: 12px; }
-      nav .navbar a.active {
-        font-weight: bold; }
-        nav .navbar a.active:after {
+      font-size: 12px;
+      text-transform: uppercase; }
+      nav .navbar li .dropdown-link {
+        position: relative; }
+      nav .navbar li a {
+        text-decoration: none;
+        color: #555555; }
+        nav .navbar li a.current-page {
+          font-weight: bold; }
+          nav .navbar li a.current-page:after {
+            content: "";
+            background-color: #ff0000;
+            height: 3px;
+            display: block;
+            visibility: visible;
+            transform: scaleX(1); }
+        nav .navbar li a:after {
           content: "";
           background-color: #ff0000;
           height: 3px;
           display: block;
+          visibility: hidden;
+          transform: scaleX(0);
+          transition: all 0.3s ease-in-out 0s; }
+        nav .navbar li a:hover:after {
           visibility: visible;
           transform: scaleX(1); }
-      nav .navbar a:after {
-        content: "";
-        background-color: #ff0000;
-        height: 3px;
-        display: block;
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out 0s; }
-      nav .navbar a:hover:after {
-        visibility: visible;
-        transform: scaleX(1); }
+      nav .navbar li .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #FFFFFF; }
+        nav .navbar li .dropdown-menu.active {
+          display: block; }
+        nav .navbar li .dropdown-menu li {
+          display: block;
+          margin: 14px; }
 
 header {
   background-image: url(../img/PortadaFacebook-Mangrullos.jpg);

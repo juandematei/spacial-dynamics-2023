@@ -75,41 +75,64 @@ nav {
         float: right;
         padding: 20px 0;
 
-        a {
-            float: left;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $text-color;
-            margin-left: 14px;
+        li {
+            display: inline-block;
+            list-style: none;
+            // Style
+            margin: 0 14px;
             line-height: 50px;
             font-size: 12px;
+            text-transform: uppercase;
 
-            &.active {
-                font-weight: bold;
+            .dropdown-link {
+                position: relative;
+            }
+
+            a {
+                text-decoration: none;
+                color: $text-color;
+
+                &.current-page {
+                    font-weight: bold;
+
+                    &:after {
+                        content: "";
+                        background-color: $secondary-color;
+                        height: 3px;
+                        display: block;
+                        visibility: visible;
+                        transform: scaleX(1);
+                    }
+                }
 
                 &:after {
                     content: "";
                     background-color: $secondary-color;
                     height: 3px;
                     display: block;
+                    visibility: hidden;
+                    transform: scaleX(0);
+                    transition: all 0.3s ease-in-out 0s;
+                }
+    
+                &:hover:after {
                     visibility: visible;
                     transform: scaleX(1);
                 }
             }
-            
-            &:after {
-                content: "";
-                background-color: $secondary-color;
-                height: 3px;
-                display: block;
-                visibility: hidden;
-                transform: scaleX(0);
-                transition: all 0.3s ease-in-out 0s;
-            }
+            .dropdown-menu {
+                display: none;
+                position: absolute;
+                background-color: #FFFFFF;
 
-            &:hover:after {
-                visibility: visible;
-                transform: scaleX(1);
+                &.active {
+                    display: block;
+                }
+
+                li {
+                    display: block;
+                    margin: 14px;
+                }
             }
         }
     }

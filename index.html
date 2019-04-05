@@ -7,21 +7,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Spacial Dynamics® Latinoamérica</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
 
     <nav>
         <div class="container">
-            <img class="logo" src="img/SpacialDynamics-Logo.png" alt="">
-            <div class="navbar">
-                <a href="#" class="active">Inicio</a>
-                <a href="#">Sobre la Formación</a>
-                <a href="#">Niveles de Formación</a>
-                <a href="#">Sobre nosotros</a>
-                <a href="#">Certificaciones</a>
-                <a href="#">Aranceles y Pagos</a>
-            </div>
+            <img class="logo" src="img/SpacialDynamics-Logo.png" alt="Spacial Dynamics® Logo">
+            <ul class="navbar">
+                <li><a href="#" class="current-page">Inicio</a></li>
+                <li class="dropdown-link"><a href="javascript:void(0)" class="dropdown-toggle">Sobre la Formación <i class="fas fa-chevron-circle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Objetivos del Programa</a></li>
+                        <li><a href="#">Ámbitos de aplicación</a></li>
+                        <li><a href="#">Métodos pedagógicos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-link"><a href="javascript:void(0)" class="dropdown-toggle">Niveles de Formación <i class="fas fa-chevron-circle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Core Studies</a></li>
+                        <li><a href="#">Nivel 1</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-link"><a href="javascript:void(0)" class="dropdown-toggle">Sobre nosotros <i class="fas fa-chevron-circle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Alejandro Dambrosi</a></li>
+                        <li><a href="#">Despertar del Hemisferio Sur S.A.</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Certificaciones</a></li>
+                <li><a href="#">Aranceles y Pagos</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -70,6 +87,9 @@
             <p>Lorem ipsum dolor sit amet.</p>
         </div>
     </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="js/navbar.js"></script>
 
 </body>
 
