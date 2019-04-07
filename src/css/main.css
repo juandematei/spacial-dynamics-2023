@@ -162,6 +162,7 @@ header.pages h1 {
 
 main {
   margin-bottom: 100px;
+  min-height: calc( 100vh - 250px);
 }
 
 main p, main ul {

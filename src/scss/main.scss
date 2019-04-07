@@ -173,6 +173,7 @@ header {
 // Main
 main {
     margin-bottom: 100px;
+    min-height: calc( 100vh - 250px);
     p, ul {
         line-height: 2em;
         margin-bottom: 1em;
