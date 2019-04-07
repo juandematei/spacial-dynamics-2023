@@ -136,7 +136,7 @@ header {
 }
 
 header.welcome {
-  background-image: url(/src/img/PortadaFacebook-Mangrullos.jpg);
+  background-image: url(/img/PortadaFacebook-Mangrullos.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -184,15 +184,15 @@ main .circle-img {
 }
 
 main .circle-img.circle-1 {
-  background-image: url(/src/img/SD1.png);
+  background-image: url(/img/SD1.png);
 }
 
 main .circle-img.circle-2 {
-  background-image: url(/src/img/SD2.jpeg);
+  background-image: url(/img/SD2.jpeg);
 }
 
 main .circle-img.circle-3 {
-  background-image: url(/src/img/SD3.JPG);
+  background-image: url(/img/SD3.JPG);
 }
 
 footer {
