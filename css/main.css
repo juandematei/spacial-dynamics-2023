@@ -24,15 +24,14 @@ h2 {
   color: #121ec3;
   font-family: "Merriweather", serif;
   font-size: 32px;
-  text-align: center;
   margin-top: 60px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: center; }
 
 h3 {
   color: #555555;
   font-family: "Merriweather", serif;
   font-size: 28px;
-  text-align: center;
   margin-top: 40px;
   margin-bottom: 20px; }
 
@@ -94,17 +93,24 @@ nav {
           margin: 14px; }
 
 header {
-  background-image: url(../img/PortadaFacebook-Mangrullos.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: calc( 100vh - 110px); }
-  header .welcome {
-    color: #FFFFFF;
-    width: 50%;
-    position: absolute;
-    right: 0px;
-    top: 300px; }
+  color: #FFFFFF; }
+  header.welcome {
+    background-image: url(../img/PortadaFacebook-Mangrullos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc( 100vh - 110px); }
+    header.welcome div {
+      width: 50%;
+      position: absolute;
+      right: 0px;
+      top: 300px; }
+  header.pages {
+    background-color: #555555;
+    text-align: center;
+    padding: 30px 0; }
+    header.pages h1 {
+      margin: 0; }
 
 main p, main ul {
   line-height: 2em;
