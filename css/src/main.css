@@ -184,7 +184,11 @@ main .img-container {
           align-items: center;
 }
 
-main .circle-img {
+main .img-container > img {
+  max-width: 400px;
+}
+
+main .img-container .circle-img {
   display: inline-block;
   width: 300px;
   height: 300px;
@@ -196,7 +200,7 @@ main .circle-img {
   position: relative;
 }
 
-main .circle-img img {
+main .img-container .circle-img img {
   width: auto;
   height: 100%;
   margin-left: -75px;
