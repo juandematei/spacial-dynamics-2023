@@ -4,219 +4,255 @@ $secondary-color: #ff0000;
 $text-color: #555555;
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i|Merriweather');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i|Merriweather");
 
-$primary-font: 'Merriweather',
-serif;
-$secondary-font: 'Lato',
-sans-serif;
+$primary-font: "Merriweather", serif;
+$secondary-font: "Lato", sans-serif;
 
 // Reset & Containers
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: $secondary-font;
-    color: $text-color;
-    //position: relative;
-    //min-height: 100vh;
+  font-family: $secondary-font;
+  color: $text-color;
+  //position: relative;
+  //min-height: 100vh;
 }
 
 .container {
-    max-width: 1088px;
-    margin: 0 auto;
+  max-width: 1088px;
+  margin: 0 auto;
 }
 
 // Typography
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 h1 {
-    font-family: $primary-font;
-    margin-bottom: 30px;
+  font-family: $primary-font;
+  margin-bottom: 2em;
 }
 
 h2 {
-    color: $primary-color;
-    font-family: $primary-font;
-    font-size: 32px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    text-align: center;
+  color: $primary-color;
+  font-family: $primary-font;
+  font-size: 32px;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  text-align: center;
 }
 
 h3 {
-    color: $text-color;
-    font-family: $primary-font;
-    font-size: 28px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-ul {
-    margin-left: 2em;
-    list-style: square;
+  color: $text-color;
+  font-family: $primary-font;
+  font-size: 28px;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 // Navbar
+$navbar-height: 110px;
 nav {
-    background-color: #FFFFFF;
-    height: 90px; // Total height 110px
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
-    z-index: 1;
+  background-color: #ffffff;
+  height: $navbar-height;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+  z-index: 1;
 
-    .logo {
-        max-height: 90px;
+  div {
+    //background-color: pink;
+    height: $navbar-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    //background-color: aquamarine;
+    width: 90px;
+    height: 90px;
+
+    img {
+      width: 100%;
     }
+  }
 
-    .navbar {
-        float: right;
-        padding: 20px 0;
+  .navbar {
+    //background-color: aqua;
+    display: flex;
+    align-items: center;
+
+    .navbar-link {
+      //background-color: aquamarine;
+      list-style: none;
+      font-size: 12px;
+      line-height: 90px;
+      text-transform: uppercase;
+      margin-left: 2em;
+      position: relative;
+
+      &.current-page {
+        //font-weight: bold;
+        position: relative;
+
+        &:after {
+          content: "";
+          background-color: $secondary-color;
+          height: 3px;
+          width: 100%;
+          display: block;
+          position: absolute;
+          top: 70px;
+          visibility: visible;
+          transform: scaleX(1);
+        }
+      }
+
+      &:after {
+        content: "";
+        background-color: $secondary-color;
+        height: 3px;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 70px;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+      }
+
+      &:hover:after {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+
+      i {
+        margin-left: 0.5em;
+      }
+
+      a {
+        text-decoration: none;
+        color: $text-color;
+      }
+
+      .dropdown-menu {
+        //background-color: lightcoral;
+        background-color: #ffffff;
+        display: none;
+        position: absolute;
+        top: 69px;
+        box-shadow: 4px 4px 4px -4px rgba(0, 0, 0, 0.5);
+        width: 100%;
+
+        &.active {
+          display: block;
+        }
 
         li {
-            display: inline-block;
-            list-style: none;
-            // Style
-            margin: 0 14px;
-            line-height: 50px;
-            font-size: 12px;
-            text-transform: uppercase;
+          display: block;
+          padding: 1em;
+          line-height: 1.5em;
+          width: 100%;
 
-            .dropdown-link {
-                position: relative;
-            }
+          &:hover {
+            background-color: #cccccc;
+          }
 
-            a {
-                text-decoration: none;
-                color: $text-color;
-
-                &.current-page {
-                    font-weight: bold;
-
-                    &:after {
-                        content: "";
-                        background-color: $secondary-color;
-                        height: 3px;
-                        display: block;
-                        visibility: visible;
-                        transform: scaleX(1);
-                    }
-                }
-
-                &:after {
-                    content: "";
-                    background-color: $secondary-color;
-                    height: 3px;
-                    display: block;
-                    visibility: hidden;
-                    transform: scaleX(0);
-                    transition: all 0.3s ease-in-out 0s;
-                }
-
-                &:hover:after {
-                    visibility: visible;
-                    transform: scaleX(1);
-                }
-            }
-
-            .dropdown-menu {
-                display: none;
-                position: absolute;
-                background-color: #FFFFFF;
-
-                &.active {
-                    display: block;
-                }
-
-                li {
-                    display: block;
-                    margin: 14px;
-                }
-            }
+          a {
+            display: block;
+          }
         }
+      }
     }
+  }
 }
 
 // Header
 header {
-    color: #FFFFFF;
+  color: #ffffff;
 
-    &.welcome {
-        background-image: url(../../img/PortadaFacebook-Mangrullos.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: calc(100vh - 110px);
+  &.welcome {
+    background-image: url(../../img/PortadaFacebook-Mangrullos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* prettier-ignore */
+    height: calc( 100vh - #{$navbar-height} );
 
-        div {
-            width: 50%;
-            position: absolute;
-            right: 0px;
-            top: 300px;
-        }
+    div {
+      width: 50%;
+      position: absolute;
+      right: 0px;
+      top: 300px;
     }
+  }
 
-    &.pages {
-        background-color: $text-color;
-        text-align: center;
-        padding: 30px 0;
+  &.pages {
+    background-color: $text-color;
+    text-align: center;
+    padding: 30px 0;
 
-        h1 {
-            margin: 0;
-        }
+    h1 {
+      margin: 0;
     }
+  }
 }
 
 // Main
 main {
-    margin-bottom: 100px;
-    min-height: calc(100vh - 250px);
+  margin-bottom: 100px;
+  min-height: calc(100vh - 250px);
 
-    p,
-    ul {
-        line-height: 2em;
-        margin-bottom: 1em;
-        //font-style: italic;
-        text-align: justify;
+  p,
+  ul {
+    line-height: 2em;
+    margin-bottom: 1em;
+    //font-style: italic;
+    text-align: justify;
+  }
+
+  ul {
+    margin-left: 2em;
+    list-style: square;
+  }
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > img {
+      max-width: 400px;
     }
+    .circle-img {
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      margin: 3em 2em;
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      position: relative;
 
-    .img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        > img {
-            max-width: 400px;
-        }
-        .circle-img {
-            display: inline-block;
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            margin: 60px 30px;
-            box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-            position: relative;
-    
-            img {
-                width: auto;
-                height: 100%;
-                margin-left: -75px;
-            }
-        }
+      img {
+        width: auto;
+        height: 100%;
+        margin-left: -75px;
+      }
     }
+  }
 }
 
 // Footer
 footer {
-    padding: 30px 0;
-    color: #FFFFFF;
-    background-color: $primary-color;
-    font-size: 12px;
+  padding: 30px 0;
+  color: #ffffff;
+  background-color: $primary-color;
+  font-size: 12px;
 }

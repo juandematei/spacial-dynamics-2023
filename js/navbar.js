@@ -6,19 +6,19 @@ jQuery(document).ready(function (e) {
         })
     }
     e(".dropdown-toggle").click(function () {
-        var t = e(this).parents(".dropdown-link").children(".dropdown-menu").is(":hidden");
-        e(".dropdown-link .dropdown-menu").hide();
-        e(".dropdown-link .dropdown-toggle").removeClass("active");
+        var t = e(this).parents(".navbar-link").children(".dropdown-menu").is(":hidden");
+        e(".navbar-link .dropdown-menu").hide();
+        e(".navbar-link .dropdown-toggle").removeClass("active");
         if (t) {
-            e(this).parents(".dropdown-link").children(".dropdown-menu").toggle().parents(".dropdown-link").children(".dropdown-toggle").addClass("active")
+            e(this).parents(".navbar-link").children(".dropdown-menu").toggle().parents(".navbar-link").children(".dropdown-toggle").addClass("active")
         }
     });
     e(document).bind("click", function (t) {
         var n = e(t.target);
-        if (!n.parents().hasClass("dropdown-link")) e(".dropdown-link .dropdown-menu").hide();
+        if (!n.parents().hasClass("navbar-link")) e(".navbar-link .dropdown-menu").hide();
     });
     e(document).bind("click", function (t) {
         var n = e(t.target);
-        if (!n.parents().hasClass("dropdown-link")) e(".dropdown-link .dropdown-toggle").removeClass("active");
+        if (!n.parents().hasClass("navbar-link")) e(".navbar-link .dropdown-toggle").removeClass("active");
     })
 });
