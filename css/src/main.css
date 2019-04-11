@@ -250,6 +250,12 @@ main .img-container .circle-img img {
   margin-left: -75px;
 }
 
+main .img-container .circle-img img.portrait {
+  width: 100%;
+  height: auto;
+  margin-left: 0px;
+}
+
 footer {
   padding: 30px 0;
   color: #ffffff;

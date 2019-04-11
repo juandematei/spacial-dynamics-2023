@@ -244,6 +244,12 @@ main {
         width: auto;
         height: 100%;
         margin-left: -75px;
+
+        &.portrait {
+          width: 100%;
+          height: auto;
+          margin-left: 0px;
+        }
       }
     }
   }
