@@ -22,15 +22,14 @@ body {
 
 h1 {
   font-family: "Merriweather", serif;
-  margin-bottom: 2em;
+  margin: 2em 0;
 }
 
 h2 {
   color: #121ec3;
   font-family: "Merriweather", serif;
   font-size: 32px;
-  margin-top: 3em;
-  margin-bottom: 2em;
+  margin: 2em 0;
   text-align: center;
 }
 
@@ -38,8 +37,7 @@ h3 {
   color: #555555;
   font-family: "Merriweather", serif;
   font-size: 28px;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin: 1.5em 0;
 }
 
 nav {
@@ -207,7 +205,7 @@ main {
 main p,
 main ul {
   line-height: 2em;
-  margin-bottom: 1em;
+  margin: 1.5em 0;
   text-align: justify;
 }
 

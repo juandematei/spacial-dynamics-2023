@@ -35,15 +35,14 @@ body {
 
 h1 {
   font-family: $primary-font;
-  margin-bottom: 2em;
+  margin: 2em 0;
 }
 
 h2 {
   color: $primary-color;
   font-family: $primary-font;
   font-size: 32px;
-  margin-top: 3em;
-  margin-bottom: 2em;
+  margin: 2em 0;
   text-align: center;
 }
 
@@ -51,8 +50,7 @@ h3 {
   color: $text-color;
   font-family: $primary-font;
   font-size: 28px;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin: 1.5em 0;
 }
 
 // Navbar
@@ -212,7 +210,7 @@ main {
   p,
   ul {
     line-height: 2em;
-    margin-bottom: 1em;
+    margin: 1.5em 0;
     //font-style: italic;
     text-align: justify;
   }
