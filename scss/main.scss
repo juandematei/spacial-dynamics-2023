@@ -252,6 +252,21 @@ main {
       }
     }
   }
+  table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0.5rem;
+
+    th,
+    td {
+      padding: 1rem;
+    }
+
+    th {
+      background-color: $secondary-color;
+      color: #ffffff;
+    }
+  }
 }
 
 // Footer

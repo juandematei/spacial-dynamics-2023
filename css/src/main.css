@@ -255,6 +255,22 @@ main .img-container .circle-img img.portrait {
   margin-left: 0px;
 }
 
+main table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0.5rem;
+}
+
+main table th,
+main table td {
+  padding: 1rem;
+}
+
+main table th {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
 footer {
   padding: 2rem;
   background-color: #121ec3;
