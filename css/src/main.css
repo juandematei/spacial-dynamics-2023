@@ -85,13 +85,13 @@ nav .navbar {
 nav .navbar .navbar-link {
   list-style: none;
   font-size: 0.7rem;
-  line-height: 90px;
   text-transform: uppercase;
-  margin-left: 2rem;
+  margin-left: 1.2rem;
   position: relative;
 }
 
 nav .navbar .navbar-link.current-page {
+  font-weight: bold;
   position: relative;
 }
 
@@ -102,7 +102,7 @@ nav .navbar .navbar-link.current-page:after {
   width: 100%;
   display: block;
   position: absolute;
-  top: 70px;
+  top: 2rem;
   visibility: visible;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
@@ -115,7 +115,7 @@ nav .navbar .navbar-link:after {
   width: 100%;
   display: block;
   position: absolute;
-  top: 70px;
+  top: 2rem;
   visibility: hidden;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -130,7 +130,7 @@ nav .navbar .navbar-link:hover:after {
 }
 
 nav .navbar .navbar-link i {
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
 }
 
 nav .navbar .navbar-link a {
@@ -142,7 +142,7 @@ nav .navbar .navbar-link .dropdown-menu {
   background-color: #ffffff;
   display: none;
   position: absolute;
-  top: 69px;
+  top: 2rem;
   -webkit-box-shadow: 4px 4px 4px -4px rgba(0, 0, 0, 0.5);
           box-shadow: 4px 4px 4px -4px rgba(0, 0, 0, 0.5);
   width: 100%;

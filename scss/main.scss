@@ -56,6 +56,7 @@ h3 {
 // Navbar
 $navbar-height: 110px;
 nav {
+  //background-color: yellowgreen;
   background-color: #ffffff;
   height: $navbar-height;
   position: sticky;
@@ -90,13 +91,14 @@ nav {
       //background-color: aquamarine;
       list-style: none;
       font-size: 0.7rem;
-      line-height: 90px;
+      //line-height: 90px;
       text-transform: uppercase;
-      margin-left: 2rem;
+      margin-left: 1.2rem;
       position: relative;
+      //font-weight: bold;
 
       &.current-page {
-        //font-weight: bold;
+        font-weight: bold;
         position: relative;
 
         &:after {
@@ -106,7 +108,7 @@ nav {
           width: 100%;
           display: block;
           position: absolute;
-          top: 70px;
+          top: 2rem;
           visibility: visible;
           transform: scaleX(1);
         }
@@ -119,7 +121,7 @@ nav {
         width: 100%;
         display: block;
         position: absolute;
-        top: 70px;
+        top: 2rem;
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.3s ease-in-out 0s;
@@ -131,7 +133,7 @@ nav {
       }
 
       i {
-        margin-left: 0.5rem;
+        margin-left: 0.3rem;
       }
 
       a {
@@ -144,7 +146,7 @@ nav {
         background-color: #ffffff;
         display: none;
         position: absolute;
-        top: 69px;
+        top: 2rem;
         box-shadow: 4px 4px 4px -4px rgba(0, 0, 0, 0.5);
         width: 100%;
 
