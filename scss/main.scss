@@ -53,6 +53,37 @@ h3 {
   margin: 1.5rem 0;
 }
 
+blockquote {
+  //background-color: aquamarine;
+  font-family: $primary-font;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 2rem;
+  margin: 3rem auto 6rem auto;
+  width: 50%;
+  position: relative;
+
+  &:before {
+    content: "“";
+    color: $secondary-color;
+    font-size: 4rem;
+    position: absolute;
+    top: 0.5rem;
+    left: -3rem;
+    z-index: -1;
+  }
+
+  &:after {
+    content: "\A - Alejandro Dambrosi";
+    white-space: pre;
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+  }
+}
+
 // Navbar
 $navbar-height: 110px;
 nav {

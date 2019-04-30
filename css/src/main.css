@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i|Merriweather");
 * {
   margin: 0;
@@ -38,6 +39,36 @@ h3 {
   font-family: "Merriweather", serif;
   font-size: 28px;
   margin: 1.5rem 0;
+}
+
+blockquote {
+  font-family: "Merriweather", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 2rem;
+  margin: 3rem auto 6rem auto;
+  width: 50%;
+  position: relative;
+}
+
+blockquote:before {
+  content: "“";
+  color: #ff0000;
+  font-size: 4rem;
+  position: absolute;
+  top: 0.5rem;
+  left: -3rem;
+  z-index: -1;
+}
+
+blockquote:after {
+  content: "\A - Alejandro Dambrosi";
+  white-space: pre;
+  font-size: 0.8rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
 }
 
 nav {
