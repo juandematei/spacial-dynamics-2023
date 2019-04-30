@@ -34,6 +34,10 @@ h2 {
   text-align: center;
 }
 
+h2.with-blockquote {
+  margin-top: 6rem;
+}
+
 h3 {
   color: #555555;
   font-family: "Merriweather", serif;
@@ -46,7 +50,7 @@ blockquote {
   font-size: 1.2rem;
   font-style: italic;
   line-height: 2rem;
-  margin: 3rem auto 6rem auto;
+  margin: 3rem auto;
   width: 50%;
   position: relative;
 }
@@ -329,14 +333,12 @@ footer .footer-content h3 {
 }
 
 footer .footer-content .footer-links {
-  background-color: lightcoral;
   -webkit-box-flex: 1;
       -ms-flex: 1 50%;
           flex: 1 50%;
 }
 
 footer .footer-content .footer-map {
-  background-color: lightgreen;
   -webkit-box-flex: 1;
       -ms-flex: 1 50%;
           flex: 1 50%;
@@ -344,7 +346,6 @@ footer .footer-content .footer-map {
 
 footer .footer-content .footer-author {
   font-size: 0.8rem;
-  background-color: limegreen;
   -webkit-box-flex: 1;
       -ms-flex: 1 100%;
           flex: 1 100%;
