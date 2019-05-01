@@ -142,6 +142,7 @@ nav {
           display: block;
           position: absolute;
           top: 2rem;
+          left: 0;
           visibility: visible;
           transform: scaleX(1);
         }
@@ -149,12 +150,13 @@ nav {
 
       &:after {
         content: "";
-        background-color: $secondary-color;
+        background-color: $text-color;
         height: 3px;
-        width: 100%;
+        width: 50%;
         display: block;
         position: absolute;
         top: 2rem;
+        left: 25%;
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.3s ease-in-out 0s;
@@ -180,9 +182,9 @@ nav {
         position: fixed;
         top: $navbar-height;
         left: 0;
-        box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
         width: 100%;
         text-align: center;
+        z-index: 2;
 
         &.active {
           display: block;
@@ -195,11 +197,28 @@ nav {
             display: block;
             padding: 1rem;
             line-height: 1.5rem;
+            transition: all 0.3s ease;
 
             &:hover {
-              background-color: $secondary-color;
-              color: #ffffff;
+              background-color: #bbbbbb;
             }
+          }
+        }
+      }
+      .dropdown-toggle {
+        position: relative;
+        &.active {
+          &::after {
+            content: "";
+            position: absolute;
+            top: 55px;
+            left: calc(50% - 16px);
+            z-index: 1;
+            display: block;
+            width: 16px;
+            height: 16px;
+            transform: rotate(45deg);
+            background-color: #cccccc;
           }
         }
       }

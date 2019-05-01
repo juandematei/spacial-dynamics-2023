@@ -143,6 +143,7 @@ nav .navbar .navbar-link.current-page:after {
   display: block;
   position: absolute;
   top: 2rem;
+  left: 0;
   visibility: visible;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
@@ -150,12 +151,13 @@ nav .navbar .navbar-link.current-page:after {
 
 nav .navbar .navbar-link:after {
   content: "";
-  background-color: #ff0000;
+  background-color: #555555;
   height: 3px;
-  width: 100%;
+  width: 50%;
   display: block;
   position: absolute;
   top: 2rem;
+  left: 25%;
   visibility: hidden;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -184,10 +186,9 @@ nav .navbar .navbar-link .dropdown-menu {
   position: fixed;
   top: 110px;
   left: 0;
-  -webkit-box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
   width: 100%;
   text-align: center;
+  z-index: 2;
 }
 
 nav .navbar .navbar-link .dropdown-menu.active {
@@ -202,11 +203,30 @@ nav .navbar .navbar-link .dropdown-menu li a {
   display: block;
   padding: 1rem;
   line-height: 1.5rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 nav .navbar .navbar-link .dropdown-menu li a:hover {
-  background-color: #ff0000;
-  color: #ffffff;
+  background-color: #bbbbbb;
+}
+
+nav .navbar .navbar-link .dropdown-toggle {
+  position: relative;
+}
+
+nav .navbar .navbar-link .dropdown-toggle.active::after {
+  content: "";
+  position: absolute;
+  top: 55px;
+  left: calc(50% - 16px);
+  z-index: 1;
+  display: block;
+  width: 16px;
+  height: 16px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #cccccc;
 }
 
 header {
