@@ -131,7 +131,6 @@ nav .navbar .navbar-link {
 }
 
 nav .navbar .navbar-link.current-page {
-  font-weight: bold;
   position: relative;
 }
 
