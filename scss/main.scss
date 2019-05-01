@@ -40,7 +40,12 @@ a {
 
 h1 {
   font-family: $primary-font;
-  margin: 2rem 0;
+  margin: 2rem 0.5rem;
+  font-size: 2.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 }
 
 h2 {
@@ -53,13 +58,21 @@ h2 {
   &.with-blockquote {
     margin-top: 6rem;
   }
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 
 h3 {
   color: $text-color;
   font-family: $primary-font;
-  font-size: 28px;
+  font-size: 1.8rem;
   margin: 1.5rem 0;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 
 blockquote {
@@ -71,6 +84,10 @@ blockquote {
   margin: 3rem auto;
   width: 50%;
   position: relative;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 
   &:before {
     content: "“";
@@ -93,6 +110,10 @@ blockquote {
   }
 }
 
+video {
+  max-width: 100%;
+}
+
 // Navbar
 $navbar-height: 110px;
 nav {
@@ -113,6 +134,10 @@ nav {
   .logo {
     width: 90px;
     height: 90px;
+
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
 
     img {
       width: 100%;
@@ -223,6 +248,9 @@ nav {
         }
       }
     }
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -237,6 +265,11 @@ header {
     background-repeat: no-repeat;
     /* prettier-ignore */
     height: calc( 100vh - #{$navbar-height} );
+
+    @media (max-width: 768px) {
+      height: 30vh;
+      background-position: right;
+    }
 
     div {
       width: 50%;
@@ -307,22 +340,63 @@ main {
       }
     }
   }
-  table {
-    width: 100%;
-    text-align: center;
-    border-spacing: 0.5rem;
+}
+// Aranceles y Pagos
+#aranceles {
+  .table {
+    display: flex;
+    justify-content: space-between;
 
-    th,
-    td {
-      padding: 1rem;
+    @media (max-width: 768px) {
+      flex-direction: column;
     }
 
-    th {
-      background-color: $secondary-color;
-      color: #ffffff;
+    .table-item {
+      width: 100%;
+      margin: 2rem;
+      padding: 1rem;
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+
+      @media (max-width: 768px) {
+        width: auto;
+      }
+
+      h4,
+      p {
+        text-align: center;
+        font-style: italic;
+        margin: 0;
+        padding: 0;
+      }
+
+      h4 {
+        font-family: $primary-font;
+        font-size: 1.5rem;
+        font-style: normal;
+        color: $secondary-color;
+        display: block;
+      }
+
+      .price {
+        font-weight: bold;
+        font-size: 1.2rem;
+        font-style: normal;
+        margin-top: 2rem;
+
+        &:before {
+          content: "USD";
+          margin-right: 0.5rem;
+        }
+
+        sup {
+          font-size: 0.6rem;
+          margin-left: 0.2rem;
+        }
+      }
     }
   }
 }
+
 // Contact
 #contact {
   h3 {
@@ -345,15 +419,27 @@ main {
     justify-content: space-between;
     align-items: stretch;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     .map {
       //background-color: aquamarine;
       width: 65%;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
 
       address {
         font-style: normal;
 
         iframe {
           margin-top: 1rem;
+
+          @media (max-width: 768px) {
+            max-width: 100%;
+          }
         }
       }
     }
@@ -361,6 +447,10 @@ main {
       //background-color: lightsalmon;
       width: 35%;
       position: relative;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
 
       &:before {
         content: "";
@@ -382,12 +472,27 @@ main {
     grid-column-gap: 4rem;
     grid-row-gap: 4rem;
 
+    @media (max-width: 768px) {
+      grid-template-columns: auto;
+    }
+
     .grid-item {
       //background-color: lightblue;
       align-self: start;
 
       &.center {
         grid-column: 2;
+
+        @media (max-width: 768px) {
+          grid-column: auto;
+        }
+      }
+
+      &.left,
+      &.right {
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       h3 {
