@@ -96,16 +96,14 @@ blockquote {
 // Navbar
 $navbar-height: 110px;
 nav {
-  //background-color: yellowgreen;
   background-color: #ffffff;
   height: $navbar-height;
   position: sticky;
   top: 0;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 2;
 
   div {
-    //background-color: pink;
     height: $navbar-height;
     display: flex;
     justify-content: space-between;
@@ -113,7 +111,6 @@ nav {
   }
 
   .logo {
-    //background-color: aquamarine;
     width: 90px;
     height: 90px;
 
@@ -123,19 +120,16 @@ nav {
   }
 
   .navbar {
-    //background-color: aqua;
     display: flex;
     align-items: center;
+    z-index: inherit;
 
     .navbar-link {
-      //background-color: aquamarine;
       list-style: none;
       font-size: 0.7rem;
-      //line-height: 90px;
       text-transform: uppercase;
       margin-left: 1.2rem;
       position: relative;
-      //font-weight: bold;
 
       &.current-page {
         position: relative;
@@ -181,30 +175,31 @@ nav {
       }
 
       .dropdown-menu {
-        //background-color: lightcoral;
-        background-color: #ffffff;
+        background-color: #cccccc;
         display: none;
-        position: absolute;
-        top: 2rem;
-        box-shadow: 4px 4px 4px -4px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: $navbar-height;
+        left: 0;
+        box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
         width: 100%;
+        text-align: center;
 
         &.active {
           display: block;
         }
 
         li {
-          display: block;
-          padding: 1rem;
-          line-height: 1.5rem;
-          width: 100%;
-
-          &:hover {
-            background-color: #cccccc;
-          }
+          display: inline-block;
 
           a {
             display: block;
+            padding: 1rem;
+            line-height: 1.5rem;
+
+            &:hover {
+              background-color: $secondary-color;
+              color: #ffffff;
+            }
           }
         }
       }
