@@ -414,6 +414,12 @@ main .img-container > img {
   max-width: 400px;
 }
 
+@media (max-width: 425px) {
+  main .img-container > img {
+    max-width: 300px;
+  }
+}
+
 main .img-container .circle-img {
   display: inline-block;
   width: 300px;

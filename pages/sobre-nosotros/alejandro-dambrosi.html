@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <nav>
+    <nav id="desktop">
       <div class="container">
         <div class="logo">
           <img
@@ -24,7 +24,7 @@
           />
         </div>
         <ul class="navbar">
-          <li class="navbar-link">
+          <li class="navbar-link current-page">
             <a href="../../index.html">Inicio</a>
           </li>
           <li class="navbar-link">
@@ -69,7 +69,7 @@
               </li>
             </ul>
           </li>
-          <li class="navbar-link current-page">
+          <li class="navbar-link">
             <a href="javascript:void(0)" class="dropdown-toggle"
               >Sobre nosotros <i class="fas fa-chevron-down"></i
             ></a>
@@ -101,11 +101,69 @@
         </ul>
       </div>
     </nav>
+
+    <nav id="mobile">
+      <!--MOBILE NAVBAR-->
+      <input type="checkbox" class="toggler" />
+      <div class="toggler-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="navbar-mobile">
+        <li class="navbar-link-1"><a href="../../index.html">Inicio</a></li>
+        <li class="navbar-link-1">Sobre la Formación</li>
+        <li class="navbar-link-2">
+          <a href="../../pages/sobre-la-formacion/objetivos-del-programa.html"
+            >Objetivos del Programa</a
+          >
+        </li>
+        <li class="navbar-link-2">
+          <a href="../../pages/sobre-la-formacion/ambitos-de-aplicacion.html"
+            >Ámbitos de aplicación</a
+          >
+        </li>
+        <li class="navbar-link-2">
+          <a href="../../pages/sobre-la-formacion/metodos-pedagogicos.html"
+            >Métodos pedagógicos</a
+          >
+        </li>
+        <li class="navbar-link-1">Niveles de Formación</li>
+        <li class="navbar-link-2">
+          <a href="../../pages/niveles-de-formacion/core-studies.html"
+            >Core Studies</a
+          >
+        </li>
+        <li class="navbar-link-2">
+          <a href="../../pages/niveles-de-formacion/nivel-1.html">Nivel I</a>
+        </li>
+        <li class="navbar-link-1">Sobre nosotros</li>
+        <li class="navbar-link-2">
+          <a href="../../pages/sobre-nosotros/alejandro-dambrosi.html"
+            >Alejandro Dambrosi</a
+          >
+        </li>
+        <li class="navbar-link-2">
+          <a href="../../pages/sobre-nosotros/despertar-del-hemisferio-sur.html"
+            >Despertar del Hemisferio Sur</a
+          >
+        </li>
+        <li class="navbar-link-1">
+          <a href="../../pages/centro-de-formacion.html"
+            >Sobre el centro de estudios</a
+          >
+        </li>
+        <li class="navbar-link-1">
+          <a href="../../pages/aranceles-y-pagos.html">Aranceles y Pagos</a>
+        </li>
+        <li class="navbar-link-1">
+          <a href="../../pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
     <header class="pages">
       <h1>Sobre nosotros</h1>
     </header>
 
-    <main>
+    <main id="nosotros">
       <div class="container">
         <h2>Alejandro Dambrosi</h2>
         <div class="img-container">
