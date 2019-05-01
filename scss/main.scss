@@ -361,6 +361,51 @@ main {
   }
 }
 
+// Ambitos de formacion
+#formacion {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+
+    .grid-item {
+      //background-color: lightblue;
+      align-self: start;
+
+      &.center {
+        grid-column: 2;
+      }
+
+      h3 {
+        margin-top: 0;
+      }
+    }
+  }
+  .circle-img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: auto;
+      height: 100%;
+      margin-left: -50px;
+
+      &.portrait {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
 // Footer
 footer {
   padding: 2rem;
