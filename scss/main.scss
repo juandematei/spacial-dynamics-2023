@@ -4,7 +4,7 @@ $secondary-color: #ff0000;
 $text-color: #555555;
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i|Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i|Merriweather|Delius");
 
 $primary-font: "Merriweather", serif;
 $secondary-font: "Lato", sans-serif;
@@ -44,7 +44,7 @@ h1 {
   font-size: 2.5rem;
 
   @media (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -135,7 +135,7 @@ nav#desktop {
     width: 90px;
     height: 90px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
       margin: 0 auto;
     }
 
@@ -248,7 +248,7 @@ nav#desktop {
         }
       }
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
       display: none;
     }
   }
@@ -257,7 +257,7 @@ nav#desktop {
 nav#mobile {
   visibility: hidden;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     visibility: visible;
   }
 
@@ -332,15 +332,63 @@ header {
     height: calc( 100vh - #{$navbar-height} );
 
     @media (max-width: 768px) {
-      height: 30vh;
-      background-position: right;
+      height: 50vh;
     }
 
     div {
-      width: 50%;
-      position: absolute;
-      right: 0px;
-      top: 300px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-left: 24rem;
+
+      @media (max-width: 768px) {
+        padding-left: 18rem;
+      }
+
+      @media (max-width: 425px) {
+        padding-left: 7rem;
+      }
+
+      @media (max-width: 375px) {
+        padding-left: 0;
+      }
+
+      h1,
+      p {
+        font-family: "Delius", cursive;
+        font-weight: normal;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin: 0 auto 1rem;
+        padding: 0;
+
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+        }
+        @media (max-width: 425px) {
+          font-size: 1.2rem;
+        }
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-size: 1.5rem;
+
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
+        @media (max-width: 425px) {
+          font-size: 0.8rem;
+        }
+      }
     }
   }
 
