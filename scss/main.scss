@@ -19,8 +19,25 @@ $secondary-font: "Lato", sans-serif;
 body {
   font-family: $secondary-font;
   color: $text-color;
-  //position: relative;
+  position: relative;
   //min-height: 100vh;
+
+  &::before {
+    content: "MUESTRA";
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(red, 0.5);
+    color: #ffffff;
+    font-size: 10rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40vh;
+    //z-index: 999;
+  }
 }
 
 .container {

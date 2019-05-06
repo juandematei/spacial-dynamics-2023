@@ -10,6 +10,23 @@
 body {
   font-family: "Lato", sans-serif;
   color: #555555;
+  position: relative;
+}
+
+body::before {
+  content: "MUESTRA";
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 10rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 40vh;
 }
 
 .container {
