@@ -148,7 +148,7 @@ header {
       height: 50vh;
     }
 
-    div {
+    .welcome-content {
       width: 100%;
       height: 100%;
       display: flex;
@@ -181,19 +181,20 @@ header {
         margin: 0 auto 1rem;
         padding: 0;
 
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+        }
+        @media (max-width: 425px) {
+          font-size: 1.2rem;
+        }
+
+        //Adds line break before & after <span>
         span {
           &:before,
           &:after {
             white-space: pre;
             content: "\A";
           }
-        }
-
-        @media (max-width: 768px) {
-          font-size: 1.5rem;
-        }
-        @media (max-width: 425px) {
-          font-size: 1.2rem;
         }
       }
 
