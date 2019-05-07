@@ -1,0 +1,43 @@
+footer {
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: $primary-color;
+
+  .footer-content {
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    .footer-links,
+    .footer-author {
+      padding: 1rem 0;
+    }
+
+    .footer-links {
+      //background-color: lightcoral;
+
+      a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 0 0.5rem;
+        background-color: #ffffff;
+        color: $primary-color;
+        border-radius: 50%;
+        line-height: 40px;
+      }
+    }
+
+    .footer-author {
+      //background-color: limegreen;
+      font-family: $primary-font;
+      font-size: 0.8rem;
+
+      i {
+        color: #c62828;
+      }
+    }
+  }
+}

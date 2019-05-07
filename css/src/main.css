@@ -13,23 +13,6 @@ body {
   position: relative;
 }
 
-body::before {
-  content: "MUESTRA";
-  position: fixed;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255, 0, 0, 0.5);
-  color: #ffffff;
-  font-size: 10rem;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 40vh;
-  z-index: 50;
-}
-
 .container {
   max-width: 1088px;
   margin: 0 auto;
@@ -472,8 +455,6 @@ header.pages h1 {
 }
 
 main {
-  margin-bottom: 100px;
-  min-height: calc(100vh - 250px);
   padding: 0 2rem;
 }
 
@@ -751,6 +732,7 @@ main .img-container .circle-img img.portrait {
 }
 
 footer {
+  margin-top: 4rem;
   padding: 2rem;
   background-color: #121ec3;
 }
@@ -758,41 +740,39 @@ footer {
 footer .footer-content {
   color: #ffffff;
   font-size: 1rem;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-footer .footer-content a {
-  color: inherit;
-  text-decoration: none;
+footer .footer-content .footer-links,
+footer .footer-content .footer-author {
+  padding: 1rem 0;
 }
 
-footer .footer-content h3 {
-  color: inherit;
-  font-size: 1.2rem;
-  margin: 1em 0;
-}
-
-footer .footer-content .footer-links {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 50%;
-          flex: 1 50%;
-}
-
-footer .footer-content .footer-map {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 50%;
-          flex: 1 50%;
+footer .footer-content .footer-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 0.5rem;
+  background-color: #ffffff;
+  color: #121ec3;
+  border-radius: 50%;
+  line-height: 40px;
 }
 
 footer .footer-content .footer-author {
+  font-family: "Merriweather", serif;
   font-size: 0.8rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 100%;
-          flex: 1 100%;
+}
+
+footer .footer-content .footer-author i {
+  color: #c62828;
 }
 
 @media only screen and (max-width: 768px) {
