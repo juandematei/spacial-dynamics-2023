@@ -413,6 +413,11 @@ header.welcome div h1 {
   padding: 0;
 }
 
+header.welcome div h1 span:before, header.welcome div h1 span:after {
+  white-space: pre;
+  content: "\A";
+}
+
 @media (max-width: 768px) {
   header.welcome div h1 {
     font-size: 1.5rem;
@@ -732,7 +737,7 @@ main .img-container .circle-img img.portrait {
 }
 
 footer {
-  margin-top: 4rem;
+  margin-top: 6rem;
   padding: 2rem;
   background-color: #121ec3;
 }

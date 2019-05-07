@@ -181,6 +181,14 @@ header {
         margin: 0 auto 1rem;
         padding: 0;
 
+        span {
+          &:before,
+          &:after {
+            white-space: pre;
+            content: "\A";
+          }
+        }
+
         @media (max-width: 768px) {
           font-size: 1.5rem;
         }
