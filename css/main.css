@@ -457,6 +457,11 @@ header.pages {
 
 header.pages h1 {
   margin: 0;
+  text-transform: lowercase;
+}
+
+header.pages h1::first-letter {
+  text-transform: capitalize;
 }
 
 main {
