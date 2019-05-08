@@ -416,16 +416,15 @@ main {
   }
 }
 
-// Ambitos de formacion
-@import "ambitos";
+// Ambitos de aplicación
 #formacion {
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 200px auto 200px;
     grid-column-gap: 4rem;
     grid-row-gap: 4rem;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1023px) {
       grid-template-columns: auto;
     }
 
@@ -433,17 +432,28 @@ main {
       //background-color: lightblue;
       align-self: start;
 
-      &.center {
-        grid-column: 2;
-
-        @media (max-width: 768px) {
-          grid-column: auto;
+      &:nth-child(6n + 3) {
+        @media (min-width: 1024px) {
+          background-color: red;
+          visibility: hidden;
         }
       }
 
-      &.left,
+      &:nth-child(6n + 4) {
+        @media (min-width: 1024px) {
+          background-color: red;
+          visibility: hidden;
+        }
+      }
+
+      &.left {
+        @media (max-width: 1023px) {
+          display: block;
+        }
+      }
+
       &.right {
-        @media (max-width: 768px) {
+        @media (max-width: 1023px) {
           display: none;
         }
       }
