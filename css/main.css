@@ -13,23 +13,6 @@ body {
   position: relative;
 }
 
-body::before {
-  content: "MUESTRA";
-  position: fixed;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255, 0, 0, 0.5);
-  color: #ffffff;
-  font-size: 10rem;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 40vh;
-  z-index: 50;
-}
-
 .container {
   max-width: 1088px;
   margin: 0 auto;
@@ -729,7 +712,7 @@ main .img-container .circle-img img.portrait {
   margin-top: 0;
 }
 
-#formacion .circle-img {
+#formacion .small-circle-img {
   display: inline-block;
   width: 200px;
   height: 200px;
@@ -741,13 +724,13 @@ main .img-container .circle-img img.portrait {
   position: relative;
 }
 
-#formacion .circle-img img {
+#formacion .small-circle-img img {
   width: auto;
   height: 100%;
   margin-left: -50px;
 }
 
-#formacion .circle-img img.portrait {
+#formacion .small-circle-img img.portrait {
   width: 100%;
   height: auto;
   margin-left: 0px;
