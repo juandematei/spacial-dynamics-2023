@@ -30,13 +30,25 @@ footer {
       }
     }
 
-    .footer-author {
-      //background-color: limegreen;
-      font-family: $primary-font;
+    .author {
+      padding-top: 3rem;
+      font-family: $secondary-font;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
       font-size: 0.8rem;
+      line-height: 30px;
 
-      i {
-        color: #c62828;
+      &-logo {
+        background-image: url(https://www.juandematei.com/img/logo-white.png);
+        background-size: 30px;
+        background-position: 0px;
+        background-repeat: no-repeat;
+        height: 30px;
+        display: inline-block;
+        padding-left: 40px;
+        margin-left: 10px;
       }
     }
   }
