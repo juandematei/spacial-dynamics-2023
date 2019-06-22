@@ -480,6 +480,10 @@ main ul {
   list-style: square;
 }
 
+main ul.no-style {
+  list-style: none;
+}
+
 main .img-container {
   display: -webkit-box;
   display: -ms-flexbox;

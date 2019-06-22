@@ -247,6 +247,10 @@ main {
   ul {
     margin-left: 2rem;
     list-style: square;
+
+    &.no-style {
+      list-style: none;
+    }
   }
 
   .img-container {
