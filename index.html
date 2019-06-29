@@ -44,6 +44,12 @@
   </head>
 
   <body>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <img src="img/modal-img-1.jpeg" alt="" />
+      </div>
+    </div>
+
     <nav id="desktop">
       <div class="container">
         <div class="logo">
@@ -231,5 +237,16 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="js/navbar.js"></script>
+    <script type="text/javascript">
+      // Get the modal
+      var modal = document.getElementById("modal");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>
