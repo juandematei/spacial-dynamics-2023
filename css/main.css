@@ -810,7 +810,7 @@ main .img-container .circle-img img.portrait {
 }
 
 .modal .modal-content img {
-  height: 90vh;
+  width: 80vw;
 }
 
 footer {
