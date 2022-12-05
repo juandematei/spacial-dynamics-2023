@@ -132,11 +132,11 @@ video {
 // Navbar
 @import "navbar";
 
-// Header
-header {
-  color: #ffffff;
-
+// Hero
+div {
+  
   &#welcome {
+    color: #ffffff;
     background-image: url(../../img/header-bg.jpg);
     background-size: cover;
     background-position: center;

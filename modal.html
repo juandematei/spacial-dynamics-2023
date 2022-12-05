@@ -1,0 +1,21 @@
+<!-- Insertar esto como primer elemento del body -->
+<div id="modal" class="modal">
+  <div class="modal-content img-container">
+    <a href="https://spacialdynamics.eu/en/ayuden-a-mantener-las-luces.html" target="_blank">
+      <img src="img/modal-img-4.jpeg" alt="" />
+    </a>
+  </div>
+</div>
+
+<!-- Insertar este script como último elemento del body -->
+<script type="text/javascript">
+  // Get the modal
+  var modal = document.getElementById("modal");
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>
