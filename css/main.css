@@ -14,13 +14,76 @@ body {
 }
 
 .container {
-  max-width: 1088px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.m-0 {
+  margin: 0;
+}
+.m-xs {
+  margin: 12px;
+}
+.m-s {
+  margin: 24px;
+}
+.m-m {
+  margin: 48px;
+}
+.m-l {
+  margin: 72px;
+}
+.m-xl {
+  margin: 144px;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.my-xs {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.my-s {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.my-m {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.my-l {
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+.my-xl {
+  margin-top: 144px;
+  margin-bottom: 144px;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+.mt-xs {
+  margin-top: 12px;
+}
+.mt-s {
+  margin-top: 24px;
+}
+.mt-m {
+  margin-top: 48px;
+}
+.mt-l {
+  margin-top: 72px;
+}
+.mt-xl {
+  margin-top: 144px;
 }
 
 .center {
@@ -161,29 +224,14 @@ nav#desktop .navbar {
 nav#desktop .navbar .navbar-link {
   list-style: none;
   font-size: 0.9rem;
+  font-weight: 600;
   text-transform: uppercase;
-  margin-left: 1.2rem;
+  margin-left: 2rem;
   position: relative;
-}
-nav#desktop .navbar .navbar-link.current-page {
-  position: relative;
-}
-nav#desktop .navbar .navbar-link.current-page:after {
-  content: "";
-  background-color: #FF1F1F;
-  height: 3px;
-  width: 100%;
-  display: block;
-  position: absolute;
-  top: 2rem;
-  left: 0;
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
 }
 nav#desktop .navbar .navbar-link:after {
   content: "";
-  background-color: #090C08;
+  background-color: #FF1F1F;
   height: 3px;
   width: 50%;
   display: block;
@@ -240,7 +288,7 @@ nav#desktop .navbar .navbar-link .dropdown-toggle {
 nav#desktop .navbar .navbar-link .dropdown-toggle.active::after {
   content: "";
   position: absolute;
-  top: 55px;
+  top: 60px;
   left: calc(50% - 16px);
   z-index: 1;
   display: block;
@@ -249,6 +297,10 @@ nav#desktop .navbar .navbar-link .dropdown-toggle.active::after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background-color: #cccccc;
+}
+nav#desktop .navbar .navbar-link .dropdown-toggle i {
+  color: #777777;
+  margin-left: 8px;
 }
 @media (max-width: 1100px) {
   nav#desktop .navbar {
@@ -324,12 +376,9 @@ header {
   color: #ffffff;
 }
 header#welcome {
-  background-image: url(/img/header-bg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #323EEC;
   /* prettier-ignore */
-  height: calc( 100vh - 110px );
+  height: calc( 50vh - 110px );
 }
 @media (max-width: 768px) {
   header#welcome {
@@ -459,12 +508,10 @@ main .img-container {
   }
 }
 main .img-container > img {
-  max-width: 400px;
-}
-@media (max-width: 425px) {
-  main .img-container > img {
-    max-width: 300px;
-  }
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  width: 0;
 }
 main .img-container .circle-img {
   display: inline-block;
@@ -724,21 +771,31 @@ footer {
 }
 footer .footer-content {
   color: #ffffff;
-  font-size: 1rem;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
 }
-footer .footer-content .footer-links,
+footer .footer-content ul {
+  list-style: none;
+}
+footer .footer-content .footer-social,
+footer .footer-content .footer-navigation,
 footer .footer-content .footer-author {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  width: 0;
   padding: 1rem 0;
+  font-size: 1rem;
 }
-footer .footer-content .footer-links a {
+footer .footer-content .footer-social a {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -747,6 +804,7 @@ footer .footer-content .footer-links a {
   color: #323EEC;
   border-radius: 50%;
   line-height: 40px;
+  text-align: center;
 }
 footer .footer-content .author {
   padding-top: 3rem;

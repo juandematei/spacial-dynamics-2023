@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  max-width: 1088px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -34,6 +34,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+//Spacing
+@import "spacing";
 
 // Typography
 .center {
@@ -139,12 +142,13 @@ header {
   color: #ffffff;
   
   &#welcome {
-    background-image: url(/img/header-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: $primary-color;
+    //background-image: url(/img/header-bg.jpg);
+    //background-size: cover;
+    //background-position: center;
+    //background-repeat: no-repeat;
     /* prettier-ignore */
-    height: calc( 100vh - #{$navbar-height} );
+    height: calc( 50vh - #{$navbar-height} );
 
     @media (max-width: 768px) {
       height: 50vh;
@@ -234,15 +238,12 @@ header {
 
 // Main
 main {
-  //margin-bottom: 100px;
-  //min-height: calc(100vh - 250px);
   padding: 0;
 
   p,
   ul {
     line-height: 2rem;
     margin: 1.5em 0;
-    //font-style: italic;
     text-align: justify;
   }
 
@@ -264,11 +265,8 @@ main {
       flex-direction: column;
     }
     > img {
-      max-width: 400px;
-
-      @media (max-width: 425px) {
-        max-width: 300px;
-      }
+      flex: 1 1 0;
+      width: 0;
     }
     .circle-img {
       display: inline-block;

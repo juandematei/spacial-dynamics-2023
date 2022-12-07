@@ -5,19 +5,26 @@ footer {
 
   .footer-content {
     color: #ffffff;
-    font-size: 1rem;
-    text-align: center;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    //flex-direction: column;
 
-    .footer-links,
+    ul {
+      list-style: none;
+    }
+    
+    .footer-social,
+    .footer-navigation,
     .footer-author {
+      flex: 1 1 0;
+      width: 0;
       padding: 1rem 0;
+      font-size: 1rem;
     }
 
-    .footer-links {
-      //background-color: lightcoral;
-
+    .footer-social {
       a {
         display: inline-block;
         width: 40px;
@@ -27,6 +34,7 @@ footer {
         color: $primary-color;
         border-radius: 50%;
         line-height: 40px;
+        text-align: center;
       }
     }
 
