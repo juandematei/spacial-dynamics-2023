@@ -86,6 +86,25 @@ a {
   margin-top: 144px;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-xs {
+  margin-bottom: 12px;
+}
+.mb-s {
+  margin-bottom: 24px;
+}
+.mb-m {
+  margin-bottom: 48px;
+}
+.mb-l {
+  margin-bottom: 72px;
+}
+.mb-xl {
+  margin-bottom: 144px;
+}
+
 .center {
   text-align: center;
 }
@@ -492,9 +511,6 @@ main .img-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -518,9 +534,8 @@ main .img-container .circle-img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  margin: 2rem;
-  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   overflow: hidden;
   position: relative;
 }
@@ -533,7 +548,6 @@ main .img-container .circle-img {
 main .img-container .circle-img img {
   width: auto;
   height: 100%;
-  margin-left: -75px;
 }
 main .img-container .circle-img img.portrait {
   width: 100%;

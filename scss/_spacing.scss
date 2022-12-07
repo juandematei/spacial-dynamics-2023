@@ -68,3 +68,23 @@ $spacer: 48px;
         margin-top: ($spacer * 3);
     }
 }
+.mb {
+    &-0 {
+        margin-bottom: 0;
+    }
+    &-xs {
+        margin-bottom: ($spacer * 0.25);
+    }
+    &-s {
+        margin-bottom: ($spacer * 0.5);
+    }
+    &-m {
+        margin-bottom: $spacer;
+    }
+    &-l {
+        margin-bottom: ($spacer * 1.5);
+    }
+    &-xl {
+        margin-bottom: ($spacer * 3);
+    }
+}
