@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Niveles de formación | Spacial Dynamics® Latinoamérica</title>
-    <link rel="stylesheet" href="../../css/main.min.css" />
+    <title>Spacial Dynamics Latinoamérica</title>
+    <link rel="stylesheet" href="/css/main.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
@@ -20,107 +22,7 @@
   </head>
 
   <body>
-    <nav id="desktop">
-      <div class="container">
-        <div class="logo">
-          <img src="../../img/logo-spacial-dynamics.png" alt="Spacial Dynamics Logo" />
-        </div>
-        <ul class="navbar">
-          <li class="navbar-link">
-            <a href="../../index.html">Inicio</a>
-          </li>
-          <li class="navbar-link current-page">
-            <a href="javascript:void(0)" class="dropdown-toggle">Sobre la Formación<i class="fas fa-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="../../pages/sobre-la-formacion/objetivos-del-programa.html">Objetivos del Programa</a>
-              </li>
-              <li>
-                <a href="../../pages/sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
-              </li>
-              <li>
-                <a href="../../pages/sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navbar-link">
-            <a href="javascript:void(0)" class="dropdown-toggle">Niveles de Formación <i class="fas fa-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="../../pages/niveles-de-formacion/core-studies.html">Core Studies</a>
-              </li>
-              <li>
-                <a href="../../pages/niveles-de-formacion/nivel-1.html">Nivel I</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navbar-link">
-            <a href="javascript:void(0)" class="dropdown-toggle">Sobre nosotros <i class="fas fa-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="../../pages/sobre-nosotros/alejandro-dambrosi.html">Alejandro Dambrosi</a>
-              </li>
-              <li>
-                <a href="../../pages/sobre-nosotros/despertar-del-hemisferio-sur.html">Despertar del Hemisferio Sur</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navbar-link">
-            <a href="../../pages/centro-de-formacion.html">Sobre el centro de estudios</a>
-          </li>
-          <li class="navbar-link">
-            <a href="../../pages/aranceles-y-pagos.html">Aranceles y Pagos</a>
-          </li>
-          <li class="navbar-link">
-            <a href="../../pages/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <nav id="mobile">
-      <!--MOBILE NAVBAR-->
-      <input type="checkbox" class="toggler" />
-      <div class="toggler-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul class="navbar-mobile">
-        <li class="navbar-link-1"><a href="../../index.html">Inicio</a></li>
-        <li class="navbar-link-1">Sobre la Formación</li>
-        <li class="navbar-link-2">
-          <a href="../../pages/sobre-la-formacion/objetivos-del-programa.html">Objetivos del Programa</a>
-        </li>
-        <li class="navbar-link-2">
-          <a href="../../pages/sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
-        </li>
-        <li class="navbar-link-2">
-          <a href="../../pages/sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
-        </li>
-        <li class="navbar-link-1">Niveles de Formación</li>
-        <li class="navbar-link-2">
-          <a href="../../pages/niveles-de-formacion/core-studies.html">Core Studies</a>
-        </li>
-        <li class="navbar-link-2">
-          <a href="../../pages/niveles-de-formacion/nivel-1.html">Nivel I</a>
-        </li>
-        <li class="navbar-link-1">Sobre nosotros</li>
-        <li class="navbar-link-2">
-          <a href="../../pages/sobre-nosotros/alejandro-dambrosi.html">Alejandro Dambrosi</a>
-        </li>
-        <li class="navbar-link-2">
-          <a href="../../pages/sobre-nosotros/despertar-del-hemisferio-sur.html">Despertar del Hemisferio Sur</a>
-        </li>
-        <li class="navbar-link-1">
-          <a href="../../pages/centro-de-formacion.html">Sobre el centro de estudios</a>
-        </li>
-        <li class="navbar-link-1">
-          <a href="../../pages/aranceles-y-pagos.html">Aranceles y Pagos</a>
-        </li>
-        <li class="navbar-link-1">
-          <a href="../../pages/contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </nav>
+    <header-component></header-component>
 
     <header id="pages">
       <h1>Niveles de formación</h1>
@@ -152,12 +54,12 @@
           <li>La capacidad de enseñar y aplicar los principios de dinámica espacial en cualquier actividad dada.</li>
           <li>La capacidad de reconocer, comprender y trabajar de manera correctiva con los problemas que surgen de una coordinación físico-espacial incompleta o interrumpida</li>
           <li>Un mayor poder de presencia en situaciones sociales, y para presentar, hablar y trabajar en puestos de liderazgo o públicos.</li>
-          <li>La capacidad de enseñar y aplicar los principios de Spacial Dynamics<sup>®</sup> en cualquier actividad, desde ejercicios individuales hasta formación de equipos para dinámicas de grupo.</li>
+          <li>La capacidad de enseñar y aplicar los principios de Spacial Dynamics® en cualquier actividad, desde ejercicios individuales hasta formación de equipos para dinámicas de grupo.</li>
         </ul>
         <p>La finalización de un Programa de capacitación de Nivel I no califica a los estudiantes para capacitar a otros como maestros o terapeutas.</p>
 
         <h3>Plan de estudios</h3>
-        <p>El curso incluye ejercicios Spacial Dynamics<sup>®</sup>, Bothmer Gymnastics<sup>®</sup>, deportes, juegos en interiores y exteriores, atletismo, actividades para el aula, bailes, volteretas y acrobacias, ejercicios para pentagramas, esgrima, artes circenses y malabares. También se incluyen ejercicios de postura, observación y análisis de movimientos, métodos de enseñanza, técnicas terapéuticas, dinámica de grupos, ergonomía espacial y aplicaciones de recuperación.</p>
+        <p>El curso incluye ejercicios Spacial Dynamics®, Bothmer Gymnastics®, deportes, juegos en interiores y exteriores, atletismo, actividades para el aula, bailes, volteretas y acrobacias, ejercicios para pentagramas, esgrima, artes circenses y malabares. También se incluyen ejercicios de postura, observación y análisis de movimientos, métodos de enseñanza, técnicas terapéuticas, dinámica de grupos, ergonomía espacial y aplicaciones de recuperación.</p>
         <p>El curso se basará en las ideas y aplicaciones prácticas de pensadores como George Adams, Albert Einstein, MC Escher, Edward T. Hall, August Nitschke, Jean Piaget, Johannes Rohen, Theodor Schwenk, Rudolf Steiner, Ita Wegman, Olive Whicher y Jaap van der Wal.</p>
 
         <h3>Ejercicios y técnicas utilizadas durante el entrenamiento</h3>
@@ -169,8 +71,8 @@
           <li>Volteretas y acrobacias</li>
           <li>Ejercicios de pentagrama y vallas de pentagrama</li>
           <li>Artes circenses y malabares</li>
-          <li>Ejercicios Spacial Dynamics<sup>®</sup></li>
-          <li>Bothmer Gymnastics<sup>®</sup></li>
+          <li>Ejercicios Spacial Dynamics®</li>
+          <li>Bothmer Gymnastics®</li>
           <li>Ejercicios de postura</li>
           <li>Juegos interiores y exteriores</li>
           <li>Pista y campo</li>
@@ -178,17 +80,17 @@
         <p>No es necesario ser un atleta fuerte para unirse al programa. Los aprendices anteriores y actuales varían ampliamente en su experiencia, habilidades y edades que van desde los 20 a los 77 años. Todos están unidos en su deseo de realizar un estudio del movimiento orientado espacialmente. Se alienta a cada persona a participar en cada actividad en la medida en que deseen ser desafiados.</p>
 
         <h3>Los caminos para obtener el diploma</h3>
-        <p>El programa de Core Studies. Estudio de los fundamentos de Spacial Dynamics<sup>®</sup> es una introducción de dos años a los conceptos básicos de Dinámica Espacial.</p>
-        <p>Para obtener un diploma de Nivel I en Spacial Dynamics<sup>®</sup>, se deberá realizar el Programa de Core Studies de dos años, más tres años en el programa ofrecido por el Centro Latinoamericano de Capacitación o puede ser seguido por 360 horas de crédito adicionales en cursos de Spacial Dynamics tomados a su propio ritmo y ofrecidos por instructores certificados de Spacial Dynamics en todo el mundo.</p>
+        <p>El programa de Core Studies. Estudio de los fundamentos de Spacial Dynamics® es una introducción de dos años a los conceptos básicos de Dinámica Espacial.</p>
+        <p>Para obtener un diploma de Nivel I en Spacial Dynamics®, se deberá realizar el Programa de Core Studies de dos años, más tres años en el programa ofrecido por el Centro Latinoamericano de Capacitación o puede ser seguido por 360 horas de crédito adicionales en cursos de Spacial Dynamics tomados a su propio ritmo y ofrecidos por instructores certificados de Spacial Dynamics en todo el mundo.</p>
       </div>
 
       <blockquote>En la experiencia de movimiento en el espacio se revela la esencia individual y social del ser humano.</blockquote>
 
       <div class="container">
-        <h2 class="with-blockquote">Core Studies: estudio de los fundamentos de Spacial Dynamics<sup>®</sup></h2>
+        <h2 class="with-blockquote">Core Studies: estudio de los fundamentos de Spacial Dynamics®</h2>
         <div class="img-container">
           <div class="circle-img">
-            <img src="../../img/core-studies.jpg" alt="Alejandro Dambrosi junto a alumnos." />
+            <img src="/img/core-studies.jpg" alt="Alejandro Dambrosi junto a alumnos." />
           </div>
         </div>
         <p>Vivimos en nuestro cuerpo y en el espacio. Esta frase que parece evidente, no resulta tan clara para muchas personas en numerosas experiencias cotidianas. Muchos problemas y situaciones de conflicto personal y profesional responden a un patrón inadecuado de uso del cuerpo y/o del espacio. Aprender a habitar cada parte de nuestro cuerpo con conciencia es un desafío de autoconocimiento. Asimismo, poder expandir la experiencia de vitalidad más allá de los límites de la piel, y configurar la existencia incluyendo un espacio más amplio, es un imperativo para el desarrollo saludable de las personas.</p>
@@ -196,10 +98,10 @@
       </div>
 
       <div class="container">
-        <h2>Certificado en Gimnasia Bothmer<sup>®</sup></h2>
+        <h2>Certificado en Gimnasia Bothmer®</h2>
         <div class="img-container">
           <div class="circle-img">
-            <img src="../../img/gimnasia.jpg" alt="Alejandro Dambrosi junto a alumnos." />
+            <img src="/img/gimnasia.jpg" alt="Alejandro Dambrosi junto a alumnos." />
           </div>
         </div>
         <p>Este curso está abierto a graduados del Instituto de Dinámica Espacial que hayan alcanzado al menos un Nivel I o se encuentren en el último año de cursada. El arduo trabajo que realizaron en los ejercicios de Gimnasia Bothmer® todos los días durante un período de al menos 5 años lo ha puesto al alcance de estudios y capacitación avanzados, hacia la certificación como Instructor de Gimnasia Bothmer®.</p>
@@ -209,22 +111,9 @@
       </div>
     </main>
 
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-links">
-            <a href="mailto:info@spacialdynamicslatinoamerica.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.facebook.com/SpacialDynamicsLatinoamerica/"><i class="fab fa-facebook-f"></i></a>
-          </div>
-          <div class="author">
-            <p>Desarrollo web</p>
-            <a class="author-logo" href="https://www.juandematei.com"></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <footer-component></footer-component>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="../../js/navbar.js"></script>
+    <script src="/js/navbar.js"></script>
   </body>
 </html>

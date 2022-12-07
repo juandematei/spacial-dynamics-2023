@@ -5,14 +5,13 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-      <header>
           <nav id="desktop">
           <div class="container">
             <div class="logo">
               <img src="/img/logo-spacial-dynamics.png" alt="Spacial Dynamics Logo" />
             </div>
             <ul class="navbar">
-              <li class="navbar-link current-page">
+              <li class="navbar-link">
                 <a href="/index.html">Inicio</a>
               </li>
               <li class="navbar-link">
@@ -41,16 +40,9 @@ class Header extends HTMLElement {
               <li class="navbar-link">
                 <a href="/pages/sinergias.html">Sinergias</a>
               </li>
-              <li class="navbar-link">
-                <a href="#">Novedades</a>
-              </li>
-              <li class="navbar-link">
-                <a href="/pages/contacto.html">Contacto</a>
-              </li>
             </ul>
           </div>
         </nav>
-      </header>
       `;
   }
 }

@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ámbitos de aplicación | Spacial Dynamics® Latinoamérica</title>
-    <link rel="stylesheet" href="../../css/main.min.css" />
+    <title>Spacial Dynamics Latinoamérica</title>
+    <link rel="stylesheet" href="/css/main.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
@@ -20,107 +22,7 @@
   </head>
 
   <body>
-    <nav id="desktop">
-      <div class="container">
-        <div class="logo">
-          <img src="../../img/logo-spacial-dynamics.png" alt="Spacial Dynamics Logo" />
-        </div>
-        <ul class="navbar">
-          <li class="navbar-link">
-            <a href="../../index.html">Inicio</a>
-          </li>
-          <li class="navbar-link current-page">
-            <a href="javascript:void(0)" class="dropdown-toggle">Sobre la Formación<i class="fas fa-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="../../pages/sobre-la-formacion/objetivos-del-programa.html">Objetivos del Programa</a>
-              </li>
-              <li>
-                <a href="../../pages/sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
-              </li>
-              <li>
-                <a href="../../pages/sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navbar-link">
-            <a href="javascript:void(0)" class="dropdown-toggle">Niveles de Formación <i class="fas fa-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="../../pages/niveles-de-formacion/core-studies.html">Core Studies</a>
-              </li>
-              <li>
-                <a href="../../pages/niveles-de-formacion/nivel-1.html">Nivel I</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navbar-link">
-            <a href="javascript:void(0)" class="dropdown-toggle">Sobre nosotros <i class="fas fa-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="../../pages/sobre-nosotros/alejandro-dambrosi.html">Alejandro Dambrosi</a>
-              </li>
-              <li>
-                <a href="../../pages/sobre-nosotros/despertar-del-hemisferio-sur.html">Despertar del Hemisferio Sur</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navbar-link">
-            <a href="../../pages/centro-de-formacion.html">Sobre el centro de estudios</a>
-          </li>
-          <li class="navbar-link">
-            <a href="../../pages/aranceles-y-pagos.html">Aranceles y Pagos</a>
-          </li>
-          <li class="navbar-link">
-            <a href="../../pages/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <nav id="mobile">
-      <!--MOBILE NAVBAR-->
-      <input type="checkbox" class="toggler" />
-      <div class="toggler-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul class="navbar-mobile">
-        <li class="navbar-link-1"><a href="../../index.html">Inicio</a></li>
-        <li class="navbar-link-1">Sobre la Formación</li>
-        <li class="navbar-link-2">
-          <a href="../../pages/sobre-la-formacion/objetivos-del-programa.html">Objetivos del Programa</a>
-        </li>
-        <li class="navbar-link-2">
-          <a href="../../pages/sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
-        </li>
-        <li class="navbar-link-2">
-          <a href="../../pages/sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
-        </li>
-        <li class="navbar-link-1">Niveles de Formación</li>
-        <li class="navbar-link-2">
-          <a href="../../pages/niveles-de-formacion/core-studies.html">Core Studies</a>
-        </li>
-        <li class="navbar-link-2">
-          <a href="../../pages/niveles-de-formacion/nivel-1.html">Nivel I</a>
-        </li>
-        <li class="navbar-link-1">Sobre nosotros</li>
-        <li class="navbar-link-2">
-          <a href="../../pages/sobre-nosotros/alejandro-dambrosi.html">Alejandro Dambrosi</a>
-        </li>
-        <li class="navbar-link-2">
-          <a href="../../pages/sobre-nosotros/despertar-del-hemisferio-sur.html">Despertar del Hemisferio Sur</a>
-        </li>
-        <li class="navbar-link-1">
-          <a href="../../pages/centro-de-formacion.html">Sobre el centro de estudios</a>
-        </li>
-        <li class="navbar-link-1">
-          <a href="../../pages/aranceles-y-pagos.html">Aranceles y Pagos</a>
-        </li>
-        <li class="navbar-link-1">
-          <a href="../../pages/contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </nav>
+    <header-component></header-component>
 
     <header id="pages">
       <h1>Sobre la formación</h1>
@@ -130,15 +32,15 @@
       <div class="container">
         <h2>Ámbitos de aplicación</h2>
         <div class="img-container">
-          <img src="../../img/ambitos-de-aplicacion.jpg" alt="Diagrama con resumen de los diferentes ámbitos de aplicación." />
+          <img src="/img/ambitos-de-aplicacion.jpg" alt="Diagrama con resumen de los diferentes ámbitos de aplicación." />
         </div>
-        <p>Los graduados de Spacial Dynamics<sup>®</sup> están aplicando activamente los principios y métodos de la dinámica espacial en una amplia gama de disciplinas:</p>
+        <p>Los graduados de Spacial Dynamics® están aplicando activamente los principios y métodos de la dinámica espacial en una amplia gama de disciplinas:</p>
 
         <div class="grid-container">
           <div class="grid-item left">
             <div class="img-container">
               <div class="small-circle-img">
-                <img class="portrait" src="../../img/amb01.webp" alt="Desarrollo infantil" />
+                <img class="portrait" src="/img/amb01.webp" alt="Desarrollo infantil" />
               </div>
             </div>
           </div>
@@ -149,7 +51,7 @@
           <div class="grid-item right">
             <div class="img-container">
               <div class="small-circle-img">
-                <img class="portrait" src="../../img/amb01.webp" alt="Desarrollo infantil" />
+                <img class="portrait" src="/img/amb01.webp" alt="Desarrollo infantil" />
               </div>
             </div>
           </div>
@@ -157,18 +59,18 @@
           <div class="grid-item left">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb02.webp" alt="Movimiento y Educación Física" />
+                <img src="/img/amb02.webp" alt="Movimiento y Educación Física" />
               </div>
             </div>
           </div>
           <div class="grid-item center">
             <h3>Movimiento y Educación Física</h3>
-            <p>Juegos, actividades en el aula, volteretas y acrobacias, esgrima, Artes del circo, Pentatlón griego, Festivales medievales, eventos de pista y campo, y la danza se han desarrollado y mejorado a través de la aplicación de la dinámica espacial en relación con las necesidades del niño en crecimiento. Estas actividades inclusivas de educación física y de movimiento se enseñan en escuelas públicas y privadas en todo el mundo por educadores de movimiento que han completado el entrenamiento de Spacial Dynamics<sup>®</sup>.</p>
+            <p>Juegos, actividades en el aula, volteretas y acrobacias, esgrima, Artes del circo, Pentatlón griego, Festivales medievales, eventos de pista y campo, y la danza se han desarrollado y mejorado a través de la aplicación de la dinámica espacial en relación con las necesidades del niño en crecimiento. Estas actividades inclusivas de educación física y de movimiento se enseñan en escuelas públicas y privadas en todo el mundo por educadores de movimiento que han completado el entrenamiento de Spacial Dynamics®.</p>
           </div>
           <div class="grid-item right">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb02.webp" alt="Movimiento y Educación Física" />
+                <img src="/img/amb02.webp" alt="Movimiento y Educación Física" />
               </div>
             </div>
           </div>
@@ -176,7 +78,7 @@
           <div class="grid-item left">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb03.webp" alt="Escuelas Waldorf" />
+                <img src="/img/amb03.webp" alt="Escuelas Waldorf" />
               </div>
             </div>
           </div>
@@ -187,7 +89,7 @@
           <div class="grid-item right">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb03.webp" alt="Escuelas Waldorf" />
+                <img src="/img/amb03.webp" alt="Escuelas Waldorf" />
               </div>
             </div>
           </div>
@@ -202,16 +104,16 @@
           <div class="grid-item left"></div>
           <div class="grid-item center">
             <h3>Necesidades especiales</h3>
-            <p>Durante los últimos 25 años Spacial Dynamics<sup>®</sup> ha estado contribuyendo al creciente cuerpo de conciencia de movimiento y terapia de movimiento en las comunidades de Camphill, educación curativa y terapia social.</p>
-            <p>Spacial Dynamics<sup>®</sup> nació del estudio de la maestría de su fundador y director, Jaimen McMillan. Los niños y los adultos jóvenes con "necesidades especiales" estaban entre los profesores a quienes él acredita muchos de los ejercicios y técnicas de la dinámica espacial. Vio que las necesidades especiales eran sobre-especializaciones espaciales que pedían ser reconocidas, comprendidas, equilibradas y puestas en armonía. La maestría en el movimiento es el resultado de la interacción armónica del cuerpo y la conciencia en el espacio circundante. Capacitar el propio dominio del movimiento es una manera de satisfacer necesidades especiales de una manera espacial. Este entrenamiento en la dinámica del dominio es para todos aquellos que desean animar y ampliar su atención, intención, efectividad e influencia.</p>
-            <p>El practicante de Spacial Dynamics<sup>®</sup> aprende a seleccionar y sugerir una dinámica más sana de compromiso y encuentro con otros. Esta disciplina ha demostrado ser tan saludable como lo es para los cuidadores como lo es para los compañeros. La disciplina de la dinámica espacial también ha demostrado ser eficaz en fomentar las interacciones sociales saludables y en ayudar a evitar el agotamiento y el agotamiento.</p>
+            <p>Durante los últimos 25 años Spacial Dynamics® ha estado contribuyendo al creciente cuerpo de conciencia de movimiento y terapia de movimiento en las comunidades de Camphill, educación curativa y terapia social.</p>
+            <p>Spacial Dynamics® nació del estudio de la maestría de su fundador y director, Jaimen McMillan. Los niños y los adultos jóvenes con "necesidades especiales" estaban entre los profesores a quienes él acredita muchos de los ejercicios y técnicas de la dinámica espacial. Vio que las necesidades especiales eran sobre-especializaciones espaciales que pedían ser reconocidas, comprendidas, equilibradas y puestas en armonía. La maestría en el movimiento es el resultado de la interacción armónica del cuerpo y la conciencia en el espacio circundante. Capacitar el propio dominio del movimiento es una manera de satisfacer necesidades especiales de una manera espacial. Este entrenamiento en la dinámica del dominio es para todos aquellos que desean animar y ampliar su atención, intención, efectividad e influencia.</p>
+            <p>El practicante de Spacial Dynamics® aprende a seleccionar y sugerir una dinámica más sana de compromiso y encuentro con otros. Esta disciplina ha demostrado ser tan saludable como lo es para los cuidadores como lo es para los compañeros. La disciplina de la dinámica espacial también ha demostrado ser eficaz en fomentar las interacciones sociales saludables y en ayudar a evitar el agotamiento y el agotamiento.</p>
           </div>
           <div class="grid-item right"></div>
 
           <div class="grid-item left">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb06.webp" alt="Atletas de elite" />
+                <img src="/img/amb06.webp" alt="Atletas de elite" />
               </div>
             </div>
           </div>
@@ -222,7 +124,7 @@
           <div class="grid-item right">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb06.webp" alt="Atletas de elite" />
+                <img src="/img/amb06.webp" alt="Atletas de elite" />
               </div>
             </div>
           </div>
@@ -230,18 +132,18 @@
           <div class="grid-item left">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb07.webp" alt="Lesiones deportivas" />
+                <img src="/img/amb07.webp" alt="Lesiones deportivas" />
               </div>
             </div>
           </div>
           <div class="grid-item center">
             <h3>Lesiones deportivas</h3>
-            <p>Las técnicas terapéuticas de Spacial Dynamics<sup>®</sup> para lesiones de rodilla, espalda, cuello, pie y hombro son utilizadas con éxito por fisioterapeutas, terapeutas de masaje, terapeutas de movimiento, osteópatas y médicos para aliviar el dolor y restringir el movimiento.</p>
+            <p>Las técnicas terapéuticas de Spacial Dynamics® para lesiones de rodilla, espalda, cuello, pie y hombro son utilizadas con éxito por fisioterapeutas, terapeutas de masaje, terapeutas de movimiento, osteópatas y médicos para aliviar el dolor y restringir el movimiento.</p>
           </div>
           <div class="grid-item right">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb07.webp" alt="Lesiones deportivas" />
+                <img src="/img/amb07.webp" alt="Lesiones deportivas" />
               </div>
             </div>
           </div>
@@ -249,7 +151,7 @@
           <div class="grid-item left">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb08.webp" alt="Coaching" />
+                <img src="/img/amb08.webp" alt="Coaching" />
               </div>
             </div>
           </div>
@@ -260,7 +162,7 @@
           <div class="grid-item right">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb08.webp" alt="Coaching" />
+                <img src="/img/amb08.webp" alt="Coaching" />
               </div>
             </div>
           </div>
@@ -282,7 +184,7 @@
           <div class="grid-item left">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb11.webp" alt="Los ancianos" />
+                <img src="/img/amb11.webp" alt="Los ancianos" />
               </div>
             </div>
           </div>
@@ -293,7 +195,7 @@
           <div class="grid-item right">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb11.webp" alt="Los ancianos" />
+                <img src="/img/amb11.webp" alt="Los ancianos" />
               </div>
             </div>
           </div>
@@ -301,7 +203,7 @@
           <div class="grid-item left">
             <div class="img-container">
               <div class="small-circle-img">
-                <img class="portrait" src="../../img/amb12.webp" alt="Trabajo en equipo" />
+                <img class="portrait" src="/img/amb12.webp" alt="Trabajo en equipo" />
               </div>
             </div>
           </div>
@@ -312,7 +214,7 @@
           <div class="grid-item right">
             <div class="img-container">
               <div class="small-circle-img">
-                <img class="portrait" src="../../img/amb12.webp" alt="Trabajo en equipo" />
+                <img class="portrait" src="/img/amb12.webp" alt="Trabajo en equipo" />
               </div>
             </div>
           </div>
@@ -343,7 +245,7 @@
           <div class="grid-item left">
             <div class="img-container">
               <div class="small-circle-img">
-                <img class="portrait" src="../../img/amb16.webp" alt="Artes del circo" />
+                <img class="portrait" src="/img/amb16.webp" alt="Artes del circo" />
               </div>
             </div>
           </div>
@@ -355,7 +257,7 @@
           <div class="grid-item right">
             <div class="img-container">
               <div class="small-circle-img">
-                <img class="portrait" src="../../img/amb16.webp" alt="Artes del circo" />
+                <img class="portrait" src="/img/amb16.webp" alt="Artes del circo" />
               </div>
             </div>
           </div>
@@ -363,7 +265,7 @@
           <div class="grid-item left">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb17.webp" alt="Bienestar de las mujeres" />
+                <img src="/img/amb17.webp" alt="Bienestar de las mujeres" />
               </div>
             </div>
           </div>
@@ -375,7 +277,7 @@
           <div class="grid-item right">
             <div class="img-container">
               <div class="small-circle-img">
-                <img src="../../img/amb17.webp" alt="Bienestar de las mujeres" />
+                <img src="/img/amb17.webp" alt="Bienestar de las mujeres" />
               </div>
             </div>
           </div>
@@ -390,22 +292,9 @@
       </div>
     </main>
 
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-links">
-            <a href="mailto:info@spacialdynamicslatinoamerica.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.facebook.com/SpacialDynamicsLatinoamerica/"><i class="fab fa-facebook-f"></i></a>
-          </div>
-          <div class="author">
-            <p>Desarrollo web</p>
-            <a class="author-logo" href="https://www.juandematei.com"></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <footer-component></footer-component>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="../../js/navbar.js"></script>
+    <script src="/js/navbar.js"></script>
   </body>
 </html>

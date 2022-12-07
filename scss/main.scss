@@ -1,13 +1,16 @@
 // Colors
-$primary-color: #121ec3;
-$secondary-color: #ff0000;
-$text-color: #555555;
+$primary-color: #323EEC;
+$secondary-color: #FF1F1F;
+$text-color: #090C08;
+$background-alt: #F2EFEA;
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i|Merriweather|Delius");
+//@import url("https://fonts.googleapis.com/css?family=Lato:400,400i|Merriweather|Delius");
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Poppins");
+
 
 $primary-font: "Merriweather", serif;
-$secondary-font: "Lato", sans-serif;
+$secondary-font: "Poppins", sans-serif;
 
 // Reset & Containers
 * {
@@ -20,23 +23,6 @@ body {
   font-family: $secondary-font;
   color: $text-color;
   position: relative;
-
-  // &::before {
-  //   content: "MUESTRA";
-  //   position: fixed;
-  //   height: 100vh;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   background-color: rgba(red, 0.5);
-  //   color: #ffffff;
-  //   font-size: 10rem;
-  //   font-weight: bold;
-  //   text-align: center;
-  //   padding-top: 40vh;
-  //   z-index: 50;
-  // }
 }
 
 .container {
@@ -91,37 +77,53 @@ h3 {
   }
 }
 
-blockquote {
-  font-family: $primary-font;
-  font-size: 1.2rem;
-  font-style: italic;
-  line-height: 2rem;
-  margin: 3rem auto;
-  width: 50%;
-  position: relative;
 
-  @media (max-width: 768px) {
-    width: 80%;
+.blockquote-block {
+    background-color: $background-alt;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+  
+  blockquote {
+    margin: 0 auto;
+    font-family: $primary-font;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 2rem;
+    width: 50%;
+    position: relative;
+    text-align: center;
+  
+    @media (max-width: 768px) {
+      width: 80%;
+    }
+  
+    &:before {
+      content: "“";
+      color: $secondary-color;
+      font-size: 4rem;
+      position: absolute;
+      top: 0.5rem;
+      left: -3rem;
+    }
+  
+    &:after {
+      content: "”";
+      color: $secondary-color;
+      font-size: 4rem;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      right: -3rem;
+    }
   }
 
-  &:before {
-    content: "“";
-    color: $secondary-color;
-    font-size: 4rem;
-    position: absolute;
-    top: 0.5rem;
-    left: -3rem;
-    z-index: -1;
-  }
-
-  &:after {
-    content: "\A - Alejandro Dambrosi";
-    white-space: pre;
+  figcaption{
+    margin: 0 auto;
+    width: 50%;
     font-size: 0.8rem;
     font-weight: bold;
-    position: absolute;
-    bottom: -2rem;
-    right: 0;
+    text-align: right;
   }
 }
 
@@ -133,11 +135,11 @@ video {
 @import "navbar";
 
 // Hero
-div {
+header {
+  color: #ffffff;
   
   &#welcome {
-    color: #ffffff;
-    background-image: url(../../img/header-bg.jpg);
+    background-image: url(/img/header-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -234,7 +236,7 @@ div {
 main {
   //margin-bottom: 100px;
   //min-height: calc(100vh - 250px);
-  padding: 0 2rem;
+  padding: 0;
 
   p,
   ul {

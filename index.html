@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Inicio | Spacial Dynamics<sup>®</sup> Latinoamérica</title>
-    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Spacial Dynamics Latinoamérica</title>
+    <link rel="stylesheet" href="/css/main.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
@@ -20,126 +22,30 @@
   </head>
 
   <body>
-    <!-- <div id="modal" class="modal">
-      <div class="modal-content img-container">
-        <a href="https://spacialdynamics.eu/en/ayuden-a-mantener-las-luces.html" target="_blank">
-          <img src="img/modal-img-4.jpeg" alt="" />
-        </a>
-      </div>
-    </div> -->
-
-    <nav id="desktop">
-      <div class="container">
-        <div class="logo">
-          <img src="/img/logo-spacial-dynamics.png" alt="Spacial Dynamics Logo" />
-        </div>
-        <ul class="navbar">
-          <li class="navbar-link current-page">
-            <a href="/index.html">Inicio</a>
-          </li>
-          <li class="navbar-link">
-            <a href="/pages/sobre-nosotros.html">Sobre nosotros</a>
-          </li>
-          <li class="navbar-link">
-            <a href="javascript:void(0)" class="dropdown-toggle">Sobre la formación<i class="fas fa-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="/pages/sobre-la-formacion/objetivos-del-programa.html">Objetivos del Programa</a>
-              </li>
-              <li>
-                <a href="/pages/sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
-              </li>
-              <li>
-                <a href="/pages/sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
-              </li>
-              <li>
-                <a href="/pages/sobre-la-formacion/niveles-de-formacion.html">Niveles de formación</a>
-              </li>
-              <li>
-                <a href="/pages/sobre-la-formacion/lineamientos-pedagogicos.html">Lineamietos pedagógicos</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navbar-link">
-            <a href="/pages/sinergias.html">Sinergias</a>
-          </li>
-          <li class="navbar-link">
-            <a href="#">Novedades</a>
-          </li>
-          <li class="navbar-link">
-            <a href="/pages/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <nav id="mobile">
-      <!--MOBILE NAVBAR-->
-      <input type="checkbox" class="toggler" />
-      <div class="toggler-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul class="navbar-mobile">
-        <li class="navbar-link-1"><a href="/index.html">Inicio</a></li>
-        <li class="navbar-link-1">Sobre la Formación</li>
-        <li class="navbar-link-2">
-          <a href="/pages/sobre-la-formacion/objetivos-del-programa.html">Objetivos del Programa</a>
-        </li>
-        <li class="navbar-link-2">
-          <a href="/pages/sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
-        </li>
-        <li class="navbar-link-2">
-          <a href="/pages/sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
-        </li>
-        <li class="navbar-link-1">Niveles de Formación</li>
-        <li class="navbar-link-2">
-          <a href="/pages/niveles-de-formacion/core-studies.html">Core Studies</a>
-        </li>
-        <li class="navbar-link-2">
-          <a href="/pages/niveles-de-formacion/nivel-1.html">Nivel I</a>
-        </li>
-        <li class="navbar-link-2">
-          <a href="/pages/niveles-de-formacion/cursos-en-desarrollo.html">Cursos en desarrollo</a>
-        </li>
-        <li class="navbar-link-1">Sobre nosotros</li>
-        <li class="navbar-link-2">
-          <a href="/pages/sobre-nosotros/alejandro-dambrosi.html">Alejandro Dambrosi</a>
-        </li>
-        <li class="navbar-link-2">
-          <a href="/pages/sobre-nosotros/despertar-del-hemisferio-sur.html">Despertar del Hemisferio Sur</a>
-        </li>
-        <li class="navbar-link-1">
-          <a href="/pages/centro-de-formacion.html">Sobre el centro de estudios</a>
-        </li>
-        <li class="navbar-link-1">
-          <a href="/pages/aranceles-y-pagos.html">Aranceles y Pagos</a>
-        </li>
-        <li class="navbar-link-1">
-          <a href="/pages/contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </nav>
+    <header-component></header-component>
 
     <header id="welcome">
       <div class="welcome-content">
-        <h1>
-          Bienvenidos a <span>Spacial Dynamics<sup>®</sup></span> Latinoamérica
-        </h1>
+        <h1>Bienvenidos a <span>Spacial Dynamics®</span> Latinoamérica</h1>
         <p>Director: Alejandro Dambrosi</p>
       </div>
     </header>
 
     <main id="home">
-      <div class="container">
+      <figure class="blockquote-block">
         <blockquote>Un desafío de nuestra época es aventurarse en una vivencia cualitativamente diferente del espacio.</blockquote>
-        <h2 class="with-blockquote">Spacial Dynamics<sup>®</sup></h2>
-        <p>Spacial Dynamics<sup>®</sup> es un cuerpo creciente de trabajo, creado por Jaimen McMillan (1950) y el Spacial Dynamics Institute, que se aplica en todo el mundo en terapia, pedagogía, aumento de rendimiento, liderazgo empresarial y paz mundial. El ser humano en movimiento se ve como un continuo fluido de cuerpo, espacio y conciencia.</p>
+        <figcaption>-Alejandro Dambrosi</figcaption>
+      </figure>
+
+      <div class="container">
+        <h2>Spacial Dynamics</h2>
+        <p>Spacial Dynamics® es un cuerpo creciente de trabajo, creado por Jaimen McMillan (1950) y el Spacial Dynamics Institute, que se aplica en todo el mundo en terapia, pedagogía, aumento de rendimiento, liderazgo empresarial y paz mundial. El ser humano en movimiento se ve como un continuo fluido de cuerpo, espacio y conciencia.</p>
         <p>La dinámica espacial es el estudio y la mejora de la relación entre la conciencia de un ser humano y el uso de su espacio. A través de técnicas y actividades de movimiento, Spacial Dynamics proporciona la experiencia de un equilibrio saludable y armonioso entre el propio cuerpo y los espacios circundantes.</p>
 
         <div class="img-container">
-          <div class="circle-img"><img src="img/SD1.jpg" alt="Alejandro Dambrosi en un curso con Jaimen McMillan." /></div>
-          <div class="circle-img"><img src="img/SD2.jpg" alt="Alejandro Dambrosi en foto grupal con Jaimen McMillan." /></div>
-          <div class="circle-img"><img src="img/SD3.jpg" alt="Alejandro Dambrosi con alumnos." /></div>
+          <div class="circle-img"><img src="/img/SD1.jpg" alt="Alejandro Dambrosi en un curso con Jaimen McMillan." /></div>
+          <div class="circle-img"><img src="/img/SD2.jpg" alt="Alejandro Dambrosi en foto grupal con Jaimen McMillan." /></div>
+          <div class="circle-img"><img src="/img/SD3.jpg" alt="Alejandro Dambrosi con alumnos." /></div>
         </div>
 
         <p>Spacial Dynamics entrena a uno para moverse con eficacia, que a su vez se manifiesta en:</p>
@@ -163,33 +69,9 @@
       </div>
     </main>
 
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-links">
-            <a href="mailto:info@spacialdynamicslatinoamerica.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.facebook.com/SpacialDynamicsLatinoamerica/"><i class="fab fa-facebook-f"></i></a>
-          </div>
-          <div class="author">
-            <p>Desarrollo web</p>
-            <a class="author-logo" href="https://www.juandematei.com"></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <footer-component></footer-component>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="js/navbar.js"></script>
-    <script type="text/javascript">
-      // Get the modal
-      var modal = document.getElementById("modal");
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      };
-    </script>
+    <script src="/js/navbar.js"></script>
   </body>
 </html>
