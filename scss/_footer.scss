@@ -1,63 +1,68 @@
 footer {
-  margin-top: 6rem;
-  padding: 2rem;
   background-color: $primary-color;
-
+  color: #FFFFFF;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  
   .footer-content {
-    color: #ffffff;
+    width: 1200px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
-    //flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    align-self: center;
+
+    h4 {
+      margin-bottom: 0.5rem;
+    }
 
     ul {
       list-style: none;
     }
     
-    .footer-social,
     .footer-navigation,
-    .footer-author {
-      flex: 1 1 0;
-      width: 0;
-      padding: 1rem 0;
-      font-size: 1rem;
-    }
-
     .footer-social {
-      a {
+      flex-grow: 1;
+    }
+    
+    .footer-social {
+      display: flex;
+      flex-direction: column;
+      i {
         display: inline-block;
-        width: 40px;
-        height: 40px;
-        margin: 0 0.5rem;
-        background-color: #ffffff;
-        color: $primary-color;
-        border-radius: 50%;
-        line-height: 40px;
+        width: 16px;
         text-align: center;
+        margin: 0 0.5rem;
+        color: #FFFFFF;
+      }
+      .copyright {
+        margin-top: auto;
       }
     }
+  }
 
-    .author {
-      padding-top: 3rem;
-      font-family: $secondary-font;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-transform: uppercase;
-      font-size: 0.8rem;
-      line-height: 30px;
+  .footer-author {
+    background-color: darken($primary-color, $amount: 50);
+    padding: 2rem 0;
+    font-family: $secondary-font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    line-height: 30px;
 
-      &-logo {
-        background-image: url(https://www.juandematei.com/img/logo-white.png);
-        background-size: 30px;
-        background-position: 0px;
-        background-repeat: no-repeat;
-        height: 30px;
-        display: inline-block;
-        padding-left: 40px;
-        margin-left: 10px;
-      }
+    .logo {
+      background-image: url(https://www.juandematei.com/img/logo-white.png);
+      background-size: 30px;
+      background-position: 0px;
+      background-repeat: no-repeat;
+      height: 30px;
+      display: inline-block;
+      padding-left: 40px;
+      margin-left: 10px;
     }
   }
 }

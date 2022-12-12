@@ -7,7 +7,7 @@
     <title>Spacial Dynamics Latinoamérica</title>
     <link rel="stylesheet" href="/css/main.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/navbar.js" type="text/javascript" defer></script>
     <script src="/components/footer.js" type="text/javascript" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
@@ -22,14 +22,27 @@
   </head>
 
   <body>
-    <header-component></header-component>
+    <navbar-component></navbar-component>
 
     <header id="pages">
       <h1>Niveles de formación</h1>
     </header>
 
+    <div class="breadcrumb">
+      <ul class="container">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre la formación</a></li>
+        <li>Niveles de formación</li>
+      </ul>
+    </div>
+
     <main id="formacion">
-      <div class="container">
+      <div id="nivel-1" class="container">
+        <div class="img-container mb-m">
+          <div class="circle-img">
+            <img src="/img/nivel-1.jpg" alt="" />
+          </div>
+        </div>
         <h2>Nivel I</h2>
         <p>Una práctica sistemática y prolongada es un requisito para alcanzar un nivel de dominio en cualquier disciplina que pensemos. Aspectos cualitativos que llevan a profundizar los patrones de movimiento y comportamiento espacial requieren tiempo para poder internalizarse y aplicarse en lo cotidiano. Apoyados en principios de precisión, eficiencia, habilidad y belleza en los ejercicios y actividades, es posible generar una conciencia profunda que permite una extrapolación hacia cada uno de los ámbitos en que las personas se desenvuelven en su vida diaria.</p>
         <p>El Nivel I es una invitación a desarrollar una habilidad superior en la cualidad de movimiento y experiencia en el espacio, con mayor comprensión de sus leyes , eligiendo la localización desde dónde enfrentar las situaciones, a la vez que ofrece experiencias únicas que abordan espacialmente aspectos sustantivos que amplían la percepción de la realidad y del ser humano, brindando herramientas para posicionarse con conciencia, creatividad y libertad de acción en los espacios en que se desenvuelva..</p>
@@ -44,7 +57,7 @@
         </ul>
         <p>No es necesario ser un atleta fuerte para unirse al programa. Los aprendices anteriores y actuales varían ampliamente en su experiencia, habilidades y edades que van desde los 20 a los 77 años. Están unidos en su deseo de realizar un estudio del movimiento orientado espacialmente. Se alienta a cada persona a participar en cada actividad en la medida en que deseen ser desafiados.</p>
 
-        <h3>Los Objetivos del Programa Nivel I</h3>
+        <h3>Objetivos del programa</h3>
         <p>Los objetivos del programa de capacitación son desarrollar:</p>
         <ul>
           <li>La calidad del movimiento propio de cada participante.</li>
@@ -84,26 +97,29 @@
         <p>Para obtener un diploma de Nivel I en Spacial Dynamics®, se deberá realizar el Programa de Core Studies de dos años, más tres años en el programa ofrecido por el Centro Latinoamericano de Capacitación o puede ser seguido por 360 horas de crédito adicionales en cursos de Spacial Dynamics tomados a su propio ritmo y ofrecidos por instructores certificados de Spacial Dynamics en todo el mundo.</p>
       </div>
 
-      <blockquote>En la experiencia de movimiento en el espacio se revela la esencia individual y social del ser humano.</blockquote>
+      <figure class="blockquote-block">
+        <blockquote>En la experiencia de movimiento en el espacio se revela la esencia individual y social del ser humano.</blockquote>
+        <figcaption>Alejandro Dambrosi</figcaption>
+      </figure>
 
-      <div class="container">
-        <h2 class="with-blockquote">Core Studies: estudio de los fundamentos de Spacial Dynamics®</h2>
-        <div class="img-container">
+      <div id="core-studies" class="container my-l">
+        <div class="img-container mb-m">
           <div class="circle-img">
             <img src="/img/core-studies.jpg" alt="Alejandro Dambrosi junto a alumnos." />
           </div>
         </div>
+        <h2>Core Studies: estudio de los fundamentos de Spacial Dynamics</h2>
         <p>Vivimos en nuestro cuerpo y en el espacio. Esta frase que parece evidente, no resulta tan clara para muchas personas en numerosas experiencias cotidianas. Muchos problemas y situaciones de conflicto personal y profesional responden a un patrón inadecuado de uso del cuerpo y/o del espacio. Aprender a habitar cada parte de nuestro cuerpo con conciencia es un desafío de autoconocimiento. Asimismo, poder expandir la experiencia de vitalidad más allá de los límites de la piel, y configurar la existencia incluyendo un espacio más amplio, es un imperativo para el desarrollo saludable de las personas.</p>
         <p>El Estudio de los Fundamentos de Spacial Dynamics aborda el conocimiento y la vivencia de diferentes espacios en los que el ser humano se desenvuelve. Cada espacio nos invita a un desafío diferente. Espacio corporal, espacio personal, espacio interpersonal, espacio social y espacio suprapersonal. Aprender a mover nuestro cuerpo incluyendo y sumando cada una de estas concepciones del espacio redunda en un beneficio respecto de los modos de abordar el mundo, las relaciones sociales y profesionales, desplegando nuevas potencialidades en nuestro ser.</p>
       </div>
 
-      <div class="container">
-        <h2>Certificado en Gimnasia Bothmer®</h2>
-        <div class="img-container">
+      <div id="gimnasia-bothmer" class="container">
+        <div class="img-container mb-m">
           <div class="circle-img">
-            <img src="/img/gimnasia.jpg" alt="Alejandro Dambrosi junto a alumnos." />
+            <img src="/img/gimnasia-bothmer.jpeg" alt="" />
           </div>
         </div>
+        <h2>Certificado en Gimnasia Bothmer</h2>
         <p>Este curso está abierto a graduados del Instituto de Dinámica Espacial que hayan alcanzado al menos un Nivel I o se encuentren en el último año de cursada. El arduo trabajo que realizaron en los ejercicios de Gimnasia Bothmer® todos los días durante un período de al menos 5 años lo ha puesto al alcance de estudios y capacitación avanzados, hacia la certificación como Instructor de Gimnasia Bothmer®.</p>
         <p>"¿Qué pasa si quiero mejorar mi habilidad en los ejercicios de Gimnasia Bothmer® y aprovechar la cualidad meditativa que proviene de moverme durante largos períodos de tiempo en silencio?" La respuesta es “Venga. Lo haremos”. Tal vez desee tanto el desafío de mejorar la calidad de su movimiento como ponerlo a prueba. Ahora puede tener esa oportunidad.</p>
         <p>La propuesta se organiza en dos módulos intensivos avanzados, que se ofrecen espaciados entre sí en el tiempo. Son cursos diseñados de forma similar, de tal manera que pueda realizar los ejercicios de Gimnasia Bothmer® en una sesión, practicar durante varios meses, volver a la segunda sesión para profundizar su capacidad y comprensión, obtener los toques finales y, si usted elije, aplicar al examen de certificación.</p>
@@ -114,6 +130,6 @@
     <footer-component></footer-component>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="/js/navbar.js"></script>
+    <script src="/js/nav.js"></script>
   </body>
 </html>

@@ -7,7 +7,7 @@
     <title>Spacial Dynamics Latinoamérica</title>
     <link rel="stylesheet" href="/css/main.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/navbar.js" type="text/javascript" defer></script>
     <script src="/components/footer.js" type="text/javascript" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
@@ -22,28 +22,39 @@
   </head>
 
   <body>
-    <header-component></header-component>
+    <navbar-component></navbar-component>
 
     <header id="pages">
-      <h1>Sobre la formación</h1>
+      <h1>Métodos pedagógicos</h1>
     </header>
+
+    <div class="breadcrumb">
+      <ul class="container">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre la formación</a></li>
+        <li>Métodos pedagógicos</li>
+      </ul>
+    </div>
 
     <main id="formacion">
       <div class="container">
-        <blockquote>El espacio no posee una cualidad moral, sino la intención y el uso que le demos al mismo. El espacio puede ser un lugar para diferenciarse tanto como para encontrarse.</blockquote>
-        <h2 class="with-blockquote">Métodos pedagógicos</h2>
-        <p>Fundado en 1985 en Nueva York, EE. UU., Spacial Dynamics® se desarrolló a partir del estudio de Jaimen McMillan sobre los procesos de maestría. Jaimen notó que no importaba la habilidad que exhibiera (atleta, bailarín, músico, comerciante, cocinero, etc.), ya que cada momento de maestría compartía las mismas pautas y patrones espaciales de apoyo. En sus estudios de psicología en la Universidad de Detroit (1968-1972), McMillan observó que los pacientes con enfermedades, lesiones y trastornos similares a menudo también mostraban movimientos y patrones espaciales notablemente similares. Sin embargo, estos patrones no fueron útiles; de hecho, eran obstáculos para el desarrollo saludable, la conciencia y la libertad humana. Los ejercicios de la dinámica espacial se diseñaron para ayudar a una persona a reconocer configuraciones espaciales no compatibles y luego ayudarlo a cambiarlas creando nuevos patrones y hábitos espaciales más favorables para moverse e interactuar.</p>
-
         <div class="img-container">
           <div class="circle-img">
             <img class="portrait" src="/img/SD6.jpg" alt="Alejandro Dambrosi jugando con un niño." />
           </div>
         </div>
-
+        <p>Fundado en 1985 en Nueva York, EE. UU., Spacial Dynamics® se desarrolló a partir del estudio de Jaimen McMillan sobre los procesos de maestría. Jaimen notó que no importaba la habilidad que exhibiera (atleta, bailarín, músico, comerciante, cocinero, etc.), ya que cada momento de maestría compartía las mismas pautas y patrones espaciales de apoyo. En sus estudios de psicología en la Universidad de Detroit (1968-1972), McMillan observó que los pacientes con enfermedades, lesiones y trastornos similares a menudo también mostraban movimientos y patrones espaciales notablemente similares. Sin embargo, estos patrones no fueron útiles; de hecho, eran obstáculos para el desarrollo saludable, la conciencia y la libertad humana. Los ejercicios de la dinámica espacial se diseñaron para ayudar a una persona a reconocer configuraciones espaciales no compatibles y luego ayudarlo a cambiarlas creando nuevos patrones y hábitos espaciales más favorables para moverse e interactuar.</p>
         <p>Un objetivo clave de los ejercicios de la dinámica espacial es cultivar el sentido de auto-movimiento, con un fuerte énfasis en fomentar la experiencia del contramovimiento. Un estudiante o paciente generalmente pasa de ser tocado, a movimientos guiados / impulsados, a imitación, y finalmente, a la actividad autodirigida y autoiniciada, donde gradualmente pueden asumir una mayor y mayor responsabilidad por su propia salud.</p>
         <p>El término Dinámica espacial indica sus características principales: que funciona con forma y dinámica. Las formas de los ejercicios y técnicas se caracterizan en gran parte por el uso de curvas, espirales, vórtices, lemniscatas y esferas invertidas. La dinámica de las formas y técnicas se caracteriza principalmente por los ritmos del agua: corrientes, corrientes, ondas, olas, remolinos, mareas y remolinos.</p>
+      </div>
 
-        <h3>Métodos:</h3>
+      <figure class="blockquote-block">
+        <blockquote>El espacio no posee una cualidad moral, sino la intención y el uso que le demos al mismo. El espacio puede ser un lugar para diferenciarse tanto como para encontrarse.</blockquote>
+        <figcaption>Alejandro Dambrosi</figcaption>
+      </figure>
+
+      <div class="container">
+        <h2>Métodos:</h2>
         <ul>
           <li>Enseñanza interactiva</li>
           <li>Mantener la ética profesional</li>
@@ -62,6 +73,6 @@
     <footer-component></footer-component>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="/js/navbar.js"></script>
+    <script src="/js/nav.js"></script>
   </body>
 </html>

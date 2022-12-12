@@ -6,51 +6,62 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-navigation">
-            <h4>Mapa del sitio</h4>
+      <div class="footer-content">
+        <div class="footer-navigation">
+            <h4>Nosotros</h4>
             <ul>
               <li>
-                <a href="/index.html">Inicio</a>
+                <a href="/pages/sobre-nosotros.html#alejandro-dambrosi">Alejandro Dambrosi</a>
               </li>
               <li>
-                <a href="/pages/sobre-nosotros.html">Sobre nosotros</a>
+                <a href="/pages/sobre-nosotros.html#katie-moran">Katie Moran</a>
               </li>
               <li>
-                <ul>
-                  <li>
-                    <a href="/pages/sobre-la-formacion/objetivos-del-programa.html">Objetivos del Programa</a>
-                  </li>
-                  <li>
-                    <a href="/pages/sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
-                  </li>
-                  <li>
-                    <a href="/pages/sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
-                  </li>
-                  <li>
-                    <a href="/pages/sobre-la-formacion/niveles-de-formacion.html">Niveles de formación</a>
-                  </li>
-                  <li>
-                    <a href="/pages/sobre-la-formacion/lineamientos-pedagogicos.html">Lineamietos pedagógicos</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="/pages/sinergias.html">Sinergias</a>
+                <a href="/pages/sobre-nosotros.html#luciana-dalesson">Luciana Dalesson</a>
               </li>
             </ul>
           </div>
+          <div class="footer-navigation">
+            <h4>Formación</h4>
+            <ul>
+              <li>
+                <a href="/pages/sobre-la-formacion/objetivos-del-programa.html">Objetivos del programa</a>
+              </li>
+              <li>
+                <a href="/pages/sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
+              </li>
+              <li>
+                <a href="/pages/sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
+              </li>
+              <li>
+                <a href="/pages/sobre-la-formacion/niveles-de-formacion.html">Niveles de formación</a>
+              </li>
+              <li>
+                <a href="/pages/sobre-la-formacion/lineamientos-pedagogicos.html">Lineamietos pedagógicos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-navigation">
+            <h4>Sinergias</h4>
+            <ul>
+              <li><a href="">Despertar del Hemisferio Sur</a></li>
+              <li><a href="">Los Mangrullos</a></li>
+              <li><a href="">LOPSA</a></li>
+              <li><a href="">AMAA</a></li>
+              <li><a href="">El Faro</a></li>
+              <li><a href="">Taller Despertares</a></li>
+            </ul>
+          </div>
           <div class="footer-social">
-            <h4>Contacto y redes</h4>
-            <a href="mailto:info@spacialdynamicslatinoamerica.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.facebook.com/SpacialDynamicsLatinoamerica/"><i class="fab fa-facebook-f"></i></a>
+          <h4>Contacto</h4>
+          <p><i class="fas fa-envelope"></i><a href="mailto:info@spacialdynamicslatinoamerica.com">info@spacialdynamicslatinoamerica.com</a></p>
+          <p><i class="fab fa-facebook-f"></i><a href="https://www.facebook.com/SpacialDynamicsLatinoamerica/">SpacialDynamicsLatinoamerica</a>
+          <p class="copyright">© 2022 Spacial Dynamics Latinoamérica</p>    
           </div>
-          <div class="footer-author">
-            <h4>Diseño y desarrollo</h4>
-            <a class="author-logo" href="https://www.juandematei.com"></a>
-            <p>Juan Dematei</p>
-          </div>
+        </div>
+        <div class="footer-author">
+          <a class="logo" href="https://www.juandematei.com"></a>
+          <p>Diseñado y desarrollado por <a href="https://www.juandematei.com">Juan Dematei</a></p>
         </div>
       </div>
     </footer>

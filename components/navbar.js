@@ -1,4 +1,4 @@
-class Header extends HTMLElement {
+class Navbar extends HTMLElement {
   constructor() {
     super();
   }
@@ -8,7 +8,7 @@ class Header extends HTMLElement {
           <nav id="desktop">
           <div class="container">
             <div class="logo">
-              <img src="/img/logo-spacial-dynamics.png" alt="Spacial Dynamics Logo" />
+            <a href="/index.html"><img src="/img/logo-spacial-dynamics.png" alt="Spacial Dynamics Logo" /></a>
             </div>
             <ul class="navbar">
               <li class="navbar-link">
@@ -47,4 +47,4 @@ class Header extends HTMLElement {
   }
 }
 
-customElements.define("header-component", Header);
+customElements.define("navbar-component", Navbar);
