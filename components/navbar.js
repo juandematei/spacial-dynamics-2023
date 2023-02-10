@@ -21,19 +21,19 @@ class Navbar extends HTMLElement {
                 <a href="javascript:void(0)" class="dropdown-toggle">Sobre la formación<i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="sobre-la-formacion/objetivos-del-programa.html">Objetivos del Programa</a>
+                    <a href="objetivos-del-programa.html">Objetivos del Programa</a>
                   </li>
                   <li>
-                    <a href="sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
+                    <a href="ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
                   </li>
                   <li>
-                    <a href="sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
+                    <a href="metodos-pedagogicos.html">Métodos pedagógicos</a>
                   </li>
                   <li>
-                    <a href="sobre-la-formacion/niveles-de-formacion.html">Niveles de formación</a>
+                    <a href="niveles-de-formacion.html">Niveles de formación</a>
                   </li>
                   <li>
-                    <a href="sobre-la-formacion/lineamientos-pedagogicos.html">Lineamietos pedagógicos</a>
+                    <a href="lineamientos-pedagogicos.html">Lineamietos pedagógicos</a>
                   </li>
                 </ul>
               </li>
