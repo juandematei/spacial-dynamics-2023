@@ -11,13 +11,13 @@ class Footer extends HTMLElement {
             <h4>Nosotros</h4>
             <ul>
               <li>
-                <a href="pages/sobre-nosotros.html#alejandro-dambrosi">Alejandro Dambrosi</a>
+                <a href="sobre-nosotros.html#alejandro-dambrosi">Alejandro Dambrosi</a>
               </li>
               <li>
-                <a href="pages/sobre-nosotros.html#katie-moran">Katie Moran</a>
+                <a href="sobre-nosotros.html#katie-moran">Katie Moran</a>
               </li>
               <li>
-                <a href="pages/sobre-nosotros.html#luciana-dalesson">Luciana Dalesson</a>
+                <a href="sobre-nosotros.html#luciana-dalesson">Luciana Dalesson</a>
               </li>
             </ul>
           </div>
@@ -25,19 +25,19 @@ class Footer extends HTMLElement {
             <h4>Formación</h4>
             <ul>
               <li>
-                <a href="pages/sobre-la-formacion/objetivos-del-programa.html">Objetivos del programa</a>
+                <a href="sobre-la-formacion/objetivos-del-programa.html">Objetivos del programa</a>
               </li>
               <li>
-                <a href="pages/sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
+                <a href="sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
               </li>
               <li>
-                <a href="pages/sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
+                <a href="sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
               </li>
               <li>
-                <a href="pages/sobre-la-formacion/niveles-de-formacion.html">Niveles de formación</a>
+                <a href="sobre-la-formacion/niveles-de-formacion.html">Niveles de formación</a>
               </li>
               <li>
-                <a href="pages/sobre-la-formacion/lineamientos-pedagogicos.html">Lineamietos pedagógicos</a>
+                <a href="sobre-la-formacion/lineamientos-pedagogicos.html">Lineamietos pedagógicos</a>
               </li>
             </ul>
           </div>

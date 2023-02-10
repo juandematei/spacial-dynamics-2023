@@ -15,30 +15,30 @@ class Navbar extends HTMLElement {
                 <a href="index.html">Inicio</a>
               </li>
               <li class="navbar-link">
-                <a href="pages/sobre-nosotros.html">Sobre nosotros</a>
+                <a href="sobre-nosotros.html">Sobre nosotros</a>
               </li>
               <li class="navbar-link">
                 <a href="javascript:void(0)" class="dropdown-toggle">Sobre la formación<i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="pages/sobre-la-formacion/objetivos-del-programa.html">Objetivos del Programa</a>
+                    <a href="sobre-la-formacion/objetivos-del-programa.html">Objetivos del Programa</a>
                   </li>
                   <li>
-                    <a href="pages/sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
+                    <a href="sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
                   </li>
                   <li>
-                    <a href="pages/sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
+                    <a href="sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
                   </li>
                   <li>
-                    <a href="pages/sobre-la-formacion/niveles-de-formacion.html">Niveles de formación</a>
+                    <a href="sobre-la-formacion/niveles-de-formacion.html">Niveles de formación</a>
                   </li>
                   <li>
-                    <a href="pages/sobre-la-formacion/lineamientos-pedagogicos.html">Lineamietos pedagógicos</a>
+                    <a href="sobre-la-formacion/lineamientos-pedagogicos.html">Lineamietos pedagógicos</a>
                   </li>
                 </ul>
               </li>
               <li class="navbar-link">
-                <a href="pages/sinergias.html">Sinergias</a>
+                <a href="sinergias.html">Sinergias</a>
               </li>
             </ul>
           </div>
