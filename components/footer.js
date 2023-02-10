@@ -25,19 +25,19 @@ class Footer extends HTMLElement {
             <h4>Formación</h4>
             <ul>
               <li>
-                <a href="sobre-la-formacion/objetivos-del-programa.html">Objetivos del programa</a>
+                <a href="objetivos-del-programa.html">Objetivos del programa</a>
               </li>
               <li>
-                <a href="sobre-la-formacion/ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
+                <a href="ambitos-de-aplicacion.html">Ámbitos de aplicación</a>
               </li>
               <li>
-                <a href="sobre-la-formacion/metodos-pedagogicos.html">Métodos pedagógicos</a>
+                <a href="metodos-pedagogicos.html">Métodos pedagógicos</a>
               </li>
               <li>
-                <a href="sobre-la-formacion/niveles-de-formacion.html">Niveles de formación</a>
+                <a href="niveles-de-formacion.html">Niveles de formación</a>
               </li>
               <li>
-                <a href="sobre-la-formacion/lineamientos-pedagogicos.html">Lineamietos pedagógicos</a>
+                <a href="lineamientos-pedagogicos.html">Lineamietos pedagógicos</a>
               </li>
             </ul>
           </div>
