@@ -146,12 +146,12 @@ header {
   
   &#welcome {
     background-color: $primary-color;
-    //background-image: url(/img/header-bg.jpg);
-    //background-size: cover;
-    //background-position: center;
-    //background-repeat: no-repeat;
+    background-image: url(/img/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     /* prettier-ignore */
-    height: calc( 50vh - #{$navbar-height} );
+    height: calc( 100vh - #{$navbar-height} );
 
     @media (max-width: 768px) {
       height: 50vh;
@@ -340,6 +340,67 @@ main {
     video {
       box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
       width: 100%;
+    }
+  }
+
+  &#sinergias {
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: $spacer;
+      flex-wrap: wrap;
+
+      .card {
+        background-color: #ffffff;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        border-radius: 4px;
+        padding: 2rem;
+        width: 432px;
+
+        h2, p, ul {
+          margin: 0;
+          padding: 0;
+          text-align: left;
+        }
+
+        h2 {
+          font-size: 1.4rem;
+          margin-bottom: 0.5rem;
+          margin-top: 1rem;
+        }
+
+        p {
+          line-height: 1.2rem;
+          margin-bottom: 2rem;
+        }
+
+        &-logo {
+          max-height: 80px;
+        }
+
+        &-links {
+          list-style: none;
+          display: inline-flex;
+          gap: 1rem;
+
+          a {
+            background-color: lighten($color: $primary-color, $amount: 40);
+            color: $primary-color;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+
+            &:hover {
+              text-decoration: none;
+              background-color: $primary-color;
+              color: #ffffff;
+            }
+          }
+        }
+      }
     }
   }
 }

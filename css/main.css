@@ -401,8 +401,12 @@ header {
 }
 header#welcome {
   background-color: #323EEC;
+  background-image: url(/img/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   /* prettier-ignore */
-  height: calc( 50vh - 110px );
+  height: calc( 100vh - 110px );
 }
 @media (max-width: 768px) {
   header#welcome {
@@ -604,6 +608,70 @@ main .video-container video {
           box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   width: 100%;
 }
+main#sinergias .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 48px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main#sinergias .card-container .card {
+  background-color: #ffffff;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 4px;
+  padding: 2rem;
+  width: 432px;
+}
+main#sinergias .card-container .card h2, main#sinergias .card-container .card p, main#sinergias .card-container .card ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+main#sinergias .card-container .card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+main#sinergias .card-container .card p {
+  line-height: 1.2rem;
+  margin-bottom: 2rem;
+}
+main#sinergias .card-container .card-logo {
+  max-height: 80px;
+}
+main#sinergias .card-container .card-links {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 1rem;
+}
+main#sinergias .card-container .card-links a {
+  background-color: #edeefd;
+  color: #323EEC;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 48px;
+  height: 48px;
+}
+main#sinergias .card-container .card-links a:hover {
+  text-decoration: none;
+  background-color: #323EEC;
+  color: #ffffff;
+}
 
 .modal {
   display: block; /* Hidden by default */
@@ -649,31 +717,41 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+footer .footer-logo {
+  width: 128px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  padding: 2rem 0;
 }
 footer .footer-content {
   width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3rem;
-  padding: 2rem 0;
+  gap: 6rem;
+  padding-bottom: 2rem;
   font-size: 0.9rem;
   -ms-flex-item-align: center;
       align-self: center;
 }
-footer .footer-content h4 {
+footer .footer-content .footer-links,
+footer .footer-content .footer-contact {
+  width: 100%;
+}
+footer .footer-content .footer-links h3,
+footer .footer-content .footer-contact h3 {
+  color: #FFFFFF;
   margin-bottom: 0.5rem;
 }
-footer .footer-content ul {
-  list-style: none;
-}
-footer .footer-content .footer-navigation,
-footer .footer-content .footer-social {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-footer .footer-content .footer-social {
+footer .footer-content .footer-contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,17 +760,85 @@ footer .footer-content .footer-social {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-footer .footer-content .footer-social i {
-  display: inline-block;
-  width: 16px;
-  text-align: center;
-  margin: 0 0.5rem;
-  color: #FFFFFF;
+footer .footer-content .footer-contact .contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-footer .footer-content .footer-social .copyright {
-  margin-top: auto;
+footer .footer-content .footer-contact .contact-form form label {
+  margin-bottom: 0.5rem;
+}
+footer .footer-content .footer-contact .contact-form form input, footer .footer-content .footer-contact .contact-form form textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #F2EFEA;
+  color: #090C08;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+footer .footer-content .footer-contact .contact-form form textarea {
+  resize: none;
+}
+footer .footer-content .footer-contact .contact-form form button {
+  padding: 1rem 2rem;
+  background-color: #03041c;
+  color: #FFFFFF;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+footer .footer-content .footer-links ul {
+  list-style: none;
+}
+footer .footer-content .footer-links .social-links {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 1rem;
+}
+footer .footer-content .footer-links .social-links a {
+  background-color: #F2EFEA;
+  padding: 1rem;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer-content .footer-links .social-links a i {
+  color: #323EEC;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+footer .footer-content .footer-links .social-links a:hover {
+  background-color: #FFFFFF;
+}
+footer .footer-content .footer-links .sitemap-links a {
+  text-decoration: none;
+}
+footer .footer-content .footer-links .sitemap-links .links-group {
+  margin-bottom: 1rem;
 }
 footer .footer-author {
+  width: 100%;
   background-color: #03041c;
   padding: 2rem 0;
   font-family: "Poppins", sans-serif;
