@@ -1,7 +1,6 @@
 footer {
   background-color: $primary-color;
   color: #FFFFFF;
-  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,6 +24,13 @@ footer {
     font-size: 0.9rem;
     align-self: center;
 
+    @media (max-width: 375px) {
+      width: 100%;
+      flex-direction: column;
+      padding: 0 20px;
+      gap: 0;
+    }  
+
     .footer-links,
     .footer-contact {
       width: 100%;
@@ -38,6 +44,10 @@ footer {
     .footer-contact {
       display: flex;
       flex-direction: column;
+
+      @media (max-width: 375px) {
+        padding-bottom: 2rem;
+      }    
 
       .contact-form {
         form {
@@ -58,6 +68,10 @@ footer {
             padding: 0.5rem 1rem;
             font-size: 1rem;
             font-family: $secondary-font;
+
+            @media (max-width: 375px) {
+              margin-bottom: 1rem;
+            }          
           }
     
           textarea {
@@ -86,6 +100,11 @@ footer {
         list-style: none;
         display: inline-flex;
         gap: 1rem;
+
+        @media (max-width: 375px) {
+          width: 100%;
+          justify-content: center;
+        }      
 
         a {
           background-color: $background-alt;

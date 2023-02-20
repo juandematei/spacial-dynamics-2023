@@ -46,12 +46,12 @@ class Footer extends HTMLElement {
             <li class="links-group">
               <h4>Sinergias</h4>
               <ul>
-                <li><a href="">Despertar del Hemisferio Sur</a></li>
-                <li><a href="">Los Mangrullos</a></li>
-                <li><a href="">LOPSA</a></li>
-                <li><a href="">AMAA</a></li>
-                <li><a href="">El Faro</a></li>
-                <li><a href="">Taller Despertares</a></li>
+                <li><a href="sinergias.html">Despertar del Hemisferio Sur</a></li>
+                <li><a href="sinergias.html">Los Mangrullos</a></li>
+                <li><a href="sinergias.html">LOPSA</a></li>
+                <li><a href="sinergias.html">AMAA</a></li>
+                <li><a href="sinergias.html">El Faro</a></li>
+                <li><a href="sinergias.html">Taller Despertares</a></li>
               </ul>
             </li>
           </ul>
