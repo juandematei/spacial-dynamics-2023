@@ -1,13 +1,27 @@
 // Footer
 .footer {
+  margin: 0 auto;
   background-color: $primary;
   color: $neutral-01;
   font-size: 0.9rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 2rem;
-  gap: 2rem;
+  display: grid;
+  gap: 2rem 4rem;
+  grid-template-areas:
+    'logo'
+    'contact'
+    'sitemap'
+    'social'
+    'author';
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'logo logo'
+      'contact sitemap'
+      'social social'
+      'author author';
+  }
 
   h2,
   h3 {
@@ -30,15 +44,29 @@
     padding: 0 20px;
   }
 
+  .contact,
+  .sitemap {
+    max-width: calc((960px - 4rem) / 2);
+  }
+
+  .logo,
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+
   .logo {
-    width: 80px;
+    grid-area: logo;
 
     &-img {
+      width: 80px;
       filter: brightness(0) invert(1);
     }
   }
 
   .contact {
+    grid-area: contact;
+    justify-self: end;
     display: flex;
     flex-direction: column;
 
@@ -83,6 +111,7 @@
   }
 
   .sitemap {
+    grid-area: sitemap;
     &-links {
       list-style: none;
 
@@ -97,6 +126,7 @@
   }
 
   .social {
+    grid-area: social;
     &-links {
       list-style: none;
       display: inline-flex;
@@ -110,7 +140,7 @@
         justify-content: center;
         align-items: center;
 
-        i {
+        svg {
           color: $primary;
           font-size: 1.2rem;
           text-align: center;
@@ -126,6 +156,7 @@
   }
 
   .author {
+    grid-area: author;
     width: 100%;
     background-color: darken($primary, $amount: 50);
     padding: 2rem 0;
@@ -139,7 +170,7 @@
     line-height: 1rem;
 
     &-logo {
-      background-image: url(https://www.juandematei.com/images/logo-white.png);
+      background-image: url(https://www.juandematei.com/img/logo-white.png);
       background-size: 30px;
       background-position: 0px;
       background-repeat: no-repeat;

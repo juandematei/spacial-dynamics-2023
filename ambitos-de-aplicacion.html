@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Spacial Dynamics Latinoamérica</title>
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/edd60794b7.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
@@ -24,19 +24,19 @@
       <div class="logo">
         <a href="index.html"><img src="images/logo-spacial-dynamics.png" alt="Spacial Dynamics Logo" /></a>
         <div id="toggle-menu" class="toggle-menu">
-          <div class="toggle-menu__icon"><i class="fas fa-bars"></i></div>
+          <div class="toggle-menu__icon"><i class="fa-solid fa-bars"></i></div>
         </div>
       </div>
       <nav>
         <ul id="main-menu" class="main-menu">
-          <li class="main-menu__item active">
+          <li class="main-menu__item">
             <a href="index.html">Inicio</a>
           </li>
           <li class="main-menu__item">
             <a href="sobre-nosotros.html">Sobre nosotros</a>
           </li>
           <li>
-            <div id="toggle-dropdown" class="main-menu__item">Sobre la formación <i id="toggle-dropdown__icon" class="fas fa-chevron-down"></i></div>
+            <div id="toggle-dropdown" class="main-menu__item active">Sobre la formación <i class="fa-solid fa-chevron-down"></i></div>
             <ul id="dropdown-menu" class="dropdown-menu">
               <li class="dropdown-menu__item">
                 <a href="objetivos-del-programa.html">Objetivos del Programa</a>
@@ -61,20 +61,18 @@
         </ul>
       </nav>
     </header>
-    <header id="pages">
-      <h1>Ámbitos de aplicación</h1>
-    </header>
 
-    <div class="breadcrumb">
-      <ul class="container">
-        <li><a href="index.html">Inicio</a></li>
-        <li>Sobre la formación</li>
-        <li>Ámbitos de aplicación</li>
-      </ul>
-    </div>
+    <main id="formacion" class="pages">
+      <h1 class="title center">Ámbitos de aplicación</h1>
+      <nav class="breadcrumb">
+        <ol>
+          <li><a href="index.html">Inicio</a></li>
+          <li>Sobre la formación</li>
+          <li>Ámbitos de aplicación</li>
+        </ol>
+      </nav>
 
-    <main id="formacion">
-      <div class="container">
+      <div class="container my-l">
         <p>Los graduados de Spacial Dynamics® están aplicando activamente los principios y métodos de la dinámica espacial en una amplia gama de disciplinas:</p>
 
         <h3>Desarrollo infantil</h3>
@@ -87,10 +85,12 @@
         <p>Los centros de Dinámica Spacial en todo el mundo capacitan a profesores de Educación de Movimiento para las Escuelas Waldorf. El Método Waldorf es un enfoque holístico de la educación, fundado por el filósofo Dr. Rudolf Steiner. La educación Waldorf reconoce y aborda distintos patrones de desarrollo, y utiliza el aprendizaje experiencial combinando las artes y las ciencias para fomentar la creatividad, la responsabilidad y la libertad humana.</p>
       </div>
 
-      <div class="img-container">
-        <div class="img-box"><img src="images/amb01.webp" alt="Desarrollo infantil" /></div>
-        <div class="img-box"><img src="images/amb02.webp" alt="Movimiento y Educación Física" /></div>
-        <div class="img-box"><img src="images/amb03.webp" alt="Escuelas Waldorf" /></div>
+      <div class="image-slider">
+        <figure>
+          <img src="images/amb01.webp" alt="Desarrollo infantil" />
+          <img src="images/amb02.webp" alt="Movimiento y Educación Física" />
+          <img src="images/amb03.webp" alt="Escuelas Waldorf" />
+        </figure>
       </div>
 
       <div class="container">
@@ -103,10 +103,10 @@
         <p>El practicante de Spacial Dynamics® aprende a seleccionar y sugerir una dinámica más sana de compromiso y encuentro con otros. Esta disciplina ha demostrado ser tan saludable como lo es para los cuidadores como lo es para los compañeros. La disciplina de la dinámica espacial también ha demostrado ser eficaz en fomentar las interacciones sociales saludables y en ayudar a evitar el agotamiento y el agotamiento.</p>
       </div>
 
-      <div class="img-container">
-        <div class="img-box"><img src="images/amb06.webp" alt="Atletas de elite" /></div>
-        <div class="img-box"><img src="images/amb07.webp" alt="Lesiones deportivas" /></div>
-        <div class="img-box"><img src="images/amb08.webp" alt="Coaching" /></div>
+      <div class="image-container">
+        <div class="image-container__box"><img src="images/amb06.webp" alt="Atletas de elite" /></div>
+        <div class="image-container__box"><img src="images/amb07.webp" alt="Lesiones deportivas" /></div>
+        <div class="image-container__box"><img src="images/amb08.webp" alt="Coaching" /></div>
       </div>
 
       <div class="container">
@@ -125,11 +125,11 @@
         <p>Al cambiar las cualidades del movimiento de una persona, una persona cambiará la calidad de su vida. La dinámica espacial trabaja específicamente para invertir o redirigir sus propios movimientos inconscientes, habituales que están trabajando contra su propio progreso, y substituirlos por los hábitos de apoyo que ayudan a un movimiento do hacia sus metas.</p>
       </div>
 
-      <div class="img-container">
-        <div class="img-box"><img src="images/amb11.webp" alt="Los ancianos" /></div>
-        <div class="img-box"><img src="images/amb12.webp" alt="Trabajo en equipo" /></div>
-        <div class="img-box"><img src="images/amb16.webp" alt="Artes del circo" /></div>
-        <div class="img-box"><img src="images/amb17.webp" alt="Bienestar de las mujeres" /></div>
+      <div class="image-container">
+        <div class="image-container__box"><img src="images/amb11.webp" alt="Los ancianos" /></div>
+        <div class="image-container__box"><img src="images/amb12.webp" alt="Trabajo en equipo" /></div>
+        <div class="image-container__box"><img src="images/amb16.webp" alt="Artes del circo" /></div>
+        <div class="image-container__box"><img src="images/amb17.webp" alt="Bienestar de las mujeres" /></div>
       </div>
 
       <div class="container">
@@ -152,7 +152,7 @@
       </div>
 
       <div class="container">
-        <div class="img-container">
+        <div class="image-container">
           <img src="images/ambitos-de-aplicacion.jpg" alt="Diagrama con resumen de los diferentes ámbitos de aplicación." />
         </div>
       </div>
@@ -233,13 +233,13 @@
       <div class="social">
         <ul class="social-links">
           <li>
-            <a href="https://www.facebook.com/SpacialDynamicsLatinoamerica/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/SpacialDynamicsLatinoamerica/" title="Ir a nuestra página en Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/spacialdynamicslatinoamerica"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/spacialdynamicslatinoamerica" title="Ir a nuestro perfil en Instagram"><i class="fa-brands fa-instagram"></i></a>
           </li>
           <li>
-            <a href="mailto:info@spacialdynamicslatinoamerica.com"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:info@spacialdynamicslatinoamerica.com" title="Enviarnos un correo"><i class="fa-regular fa-envelope"></i></a>
           </li>
         </ul>
       </div>

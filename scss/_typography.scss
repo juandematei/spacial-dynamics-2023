@@ -1,47 +1,45 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather|Poppins");
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Poppins');
 
 // Fonts
-$primary-font: "Merriweather", serif;
-$secondary-font: "Poppins", sans-serif;
+$primary-font: 'Merriweather', serif;
+$secondary-font: 'Poppins', sans-serif;
 
 // Typography
-h1, h2, h3 {
-    font-family: $primary-font;
+h1,
+h2,
+h3 {
+  font-family: $primary-font;
 }
 
 h1 {
-    font-size: 3.05rem;
+  font-size: 3rem;
 }
 
 h2 {
-    font-size: 2.44rem;
-    color: $primary;
-    
-    &.with-blockquote {
-        margin-top: 6rem;
-    }
+  font-size: 2rem;
+  color: $primary;
 }
 
 h3 {
-    font-size: 1.95rem;
-    color: $neutral-09;
+  font-size: 1.8rem;
+  color: $neutral-09;
 }
 
 .center {
-    text-align: center;
-  }
-  
+  text-align: center;
+}
 
 .blockquote-block {
   background-color: $tertiary;
   color: $neutral-08;
-  padding: 2rem 0;
-  
+  padding: 3rem 0;
+
   blockquote {
     position: relative;
     font-family: $primary-font;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-style: italic;
+    font-weight: 300;
     line-height: 2rem;
     padding: 0 2rem;
 
@@ -61,9 +59,13 @@ h3 {
   }
 
   figcaption {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: bold;
     margin-top: 0.5rem;
     margin-left: 2rem;
+
+    &:before {
+      content: '-';
+    }
   }
 }

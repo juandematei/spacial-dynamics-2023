@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Spacial Dynamics Latinoamérica</title>
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/edd60794b7.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
@@ -24,19 +24,19 @@
       <div class="logo">
         <a href="index.html"><img src="images/logo-spacial-dynamics.png" alt="Spacial Dynamics Logo" /></a>
         <div id="toggle-menu" class="toggle-menu">
-          <div class="toggle-menu__icon"><i class="fas fa-bars"></i></div>
+          <div class="toggle-menu__icon"><i class="fa-solid fa-bars"></i></div>
         </div>
       </div>
       <nav>
         <ul id="main-menu" class="main-menu">
-          <li class="main-menu__item active">
+          <li class="main-menu__item">
             <a href="index.html">Inicio</a>
           </li>
           <li class="main-menu__item">
             <a href="sobre-nosotros.html">Sobre nosotros</a>
           </li>
           <li>
-            <div id="toggle-dropdown" class="main-menu__item">Sobre la formación <i id="toggle-dropdown__icon" class="fas fa-chevron-down"></i></div>
+            <div id="toggle-dropdown" class="main-menu__item active">Sobre la formación <i class="fa-solid fa-chevron-down"></i></div>
             <ul id="dropdown-menu" class="dropdown-menu">
               <li class="dropdown-menu__item">
                 <a href="objetivos-del-programa.html">Objetivos del Programa</a>
@@ -61,24 +61,21 @@
         </ul>
       </nav>
     </header>
-    <header id="pages">
-      <h1>Objetivos del programa</h1>
-    </header>
 
-    <div class="breadcrumb">
-      <ul class="container">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre la formación</a></li>
-        <li>Objetivos del programa</li>
-      </ul>
-    </div>
+    <main id="formacion" class="pages">
+      <h1 class="title center">Objetivos del programa</h1>
+      <nav class="breadcrumb">
+        <ol>
+          <li><a href="index.html">Inicio</a></li>
+          <li>Sobre la formación</li>
+          <li>Objetivos del programa</li>
+        </ol>
+      </nav>
 
-    <main id="formacion">
-      <div class="container">
+      <div class="container my-l">
         <div class="video-container mb-m">
           <video controls preload="metadata">
             <source src="images/video.mp4" type="images/mp4" />
-            <track label="Español" kind="subtitles" srclang="es" src="images/captions.vtt" default />
           </video>
         </div>
         <p>El programa está diseñado para capacitar a los estudiantes en la disciplina de Spacial Dynamics® que beneficiará a los participantes en su vida personal y profesional. Durante más de 30 años, los ejecutivos de negocios, terapeutas, artistas, atletas, líderes comunitarios y consultores se han beneficiado de estos programas. También aumentan la eficacia de profesores académicos y especializados, así como padres... incluso abuelos. En resumen, este modelo de formación se dirige a todos aquellos interesados en obtener una mayor comprensión de la relación entre el movimiento, el desarrollo espacial, la dinámica de grupo, el aprendizaje y los procesos de recuperación.</p>
@@ -147,13 +144,13 @@
       <div class="social">
         <ul class="social-links">
           <li>
-            <a href="https://www.facebook.com/SpacialDynamicsLatinoamerica/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/SpacialDynamicsLatinoamerica/" title="Ir a nuestra página en Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/spacialdynamicslatinoamerica"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/spacialdynamicslatinoamerica" title="Ir a nuestro perfil en Instagram"><i class="fa-brands fa-instagram"></i></a>
           </li>
           <li>
-            <a href="mailto:info@spacialdynamicslatinoamerica.com"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:info@spacialdynamicslatinoamerica.com" title="Enviarnos un correo"><i class="fa-regular fa-envelope"></i></a>
           </li>
         </ul>
       </div>
