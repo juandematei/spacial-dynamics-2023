@@ -1,0 +1,49 @@
+#pages {
+  background-color: $primary;
+  color: $neutral-01;
+  text-align: center;
+  padding: 30px 0;
+
+  h1 {
+    margin: 0;
+    text-transform: lowercase;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}
+
+// Breadcrumb
+.breadcrumb {
+  background-color: lighten($primary, $amount: 40);
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: $navbar-height;
+
+  ul {
+    list-style: none;
+    color: $neutral-10;
+    font-size: 0.9rem;
+
+    li {
+      display: inline;
+
+      + li:before {
+        padding: 0.5rem;
+        content: '/\00a0';
+      }
+
+      a {
+        color: $primary;
+        text-decoration: none;
+
+        &:hover {
+          color: darken($primary, $amount: 10);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

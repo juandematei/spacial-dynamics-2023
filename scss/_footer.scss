@@ -9,16 +9,30 @@
   padding-top: 2rem;
   gap: 2rem;
 
+  h2,
+  h3 {
+    color: $neutral-01;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+
+    &:hover {
+      text-decoration-style: solid;
+    }
+  }
+
   .contact,
   .sitemap,
   .author {
     width: 100%;
     padding: 0 20px;
   }
-  
+
   .logo {
     width: 80px;
-      
+
     &-img {
       filter: brightness(0) invert(1);
     }
@@ -72,6 +86,10 @@
     &-links {
       list-style: none;
 
+      > li {
+        margin-bottom: 0.5rem;
+      }
+
       &__group {
         list-style: none;
       }
@@ -93,20 +111,20 @@
         align-items: center;
 
         i {
-        color: $primary;
-        font-size: 1.2rem;
-        text-align: center;
-        width: 1.2rem;
-        height: 1.2rem;
+          color: $primary;
+          font-size: 1.2rem;
+          text-align: center;
+          width: 1.2rem;
+          height: 1.2rem;
         }
 
         &:hover {
-        background-color: $neutral-01;
+          background-color: $neutral-01;
         }
       }
     }
   }
-  
+
   .author {
     width: 100%;
     background-color: darken($primary, $amount: 50);
@@ -121,7 +139,7 @@
     line-height: 1rem;
 
     &-logo {
-      background-image: url(https://www.juandematei.com/img/logo-white.png);
+      background-image: url(https://www.juandematei.com/images/logo-white.png);
       background-size: 30px;
       background-position: 0px;
       background-repeat: no-repeat;
@@ -133,5 +151,3 @@
     }
   }
 }
-  
-  

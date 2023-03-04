@@ -15,6 +15,7 @@ h1 {
 
 h2 {
     font-size: 2.44rem;
+    color: $primary;
     
     &.with-blockquote {
         margin-top: 6rem;
@@ -23,6 +24,7 @@ h2 {
 
 h3 {
     font-size: 1.95rem;
+    color: $neutral-09;
 }
 
 .center {
@@ -31,51 +33,37 @@ h3 {
   
 
 .blockquote-block {
-    background-color: $tertiary;
-    width: 100%;
-    margin: 0 auto;
-    padding: 3rem 0;
-    overflow: hidden;
-
-blockquote {
-    margin: 0 auto;
+  background-color: $tertiary;
+  color: $neutral-08;
+  padding: 2rem 0;
+  
+  blockquote {
+    position: relative;
     font-family: $primary-font;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-style: italic;
     line-height: 2rem;
-    width: 50%;
-    position: relative;
-    text-align: center;
+    padding: 0 2rem;
 
-    @media (max-width: 768px) {
-    width: 80%;
+    .quotes {
+      color: darken($tertiary, $amount: 25%);
+      font-size: 2rem;
+      position: absolute;
     }
-
-    &:before {
-    content: "“";
-    color: $secondary;
-    font-size: 4rem;
-    position: absolute;
-    top: 0.5rem;
-    left: -3rem;
+    .fa-quote-left {
+      left: -0.5rem;
+      top: -0.5rem;
     }
-
-    &:after {
-    content: "”";
-    color: $secondary;
-    font-size: 4rem;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    right: -3rem;
+    .fa-quote-right {
+      right: -0.5rem;
+      bottom: 0;
     }
-}
+  }
 
-figcaption{
-    margin: 0 auto;
-    width: 50%;
+  figcaption {
     font-size: 0.8rem;
     font-weight: bold;
-    text-align: right;
-}
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+  }
 }
