@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Poppins");
+
+// Fonts
+$primary-font: "Merriweather", serif;
+$secondary-font: "Poppins", sans-serif;
+
+// Typography
+h1, h2, h3 {
+    font-family: $primary-font;
+}
+
+h1 {
+    font-size: 3.05rem;
+}
+
+h2 {
+    font-size: 2.44rem;
+    
+    &.with-blockquote {
+        margin-top: 6rem;
+    }
+}
+
+h3 {
+    font-size: 1.95rem;
+}
+
+.center {
+    text-align: center;
+  }
+  
+
+.blockquote-block {
+    background-color: $tertiary;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    overflow: hidden;
+
+blockquote {
+    margin: 0 auto;
+    font-family: $primary-font;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 2rem;
+    width: 50%;
+    position: relative;
+    text-align: center;
+
+    @media (max-width: 768px) {
+    width: 80%;
+    }
+
+    &:before {
+    content: "“";
+    color: $secondary;
+    font-size: 4rem;
+    position: absolute;
+    top: 0.5rem;
+    left: -3rem;
+    }
+
+    &:after {
+    content: "”";
+    color: $secondary;
+    font-size: 4rem;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: -3rem;
+    }
+}
+
+figcaption{
+    margin: 0 auto;
+    width: 50%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: right;
+}
+}
