@@ -7,7 +7,7 @@ $navbar-height: 112px;
   height: $navbar-height;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 999;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -42,7 +42,7 @@ $navbar-height: 112px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    z-index: 3;
+    z-index: 1000;
 
     @media screen and (min-width: 768px) {
       display: none;
@@ -60,7 +60,7 @@ $navbar-height: 112px;
     }
   }
 
-  .main-menu, 
+  .main-menu,
   .dropdown-menu {
     list-style: none;
     display: flex;
@@ -74,7 +74,7 @@ $navbar-height: 112px;
       padding-left: 8px;
 
       @media screen and (min-width: 768px) {
-        padding: 0.5rem 0;   
+        padding: 0.5rem 0;
       }
 
       &.active {
@@ -85,7 +85,7 @@ $navbar-height: 112px;
           border-left: 0;
           margin-left: 0;
           border-bottom: 4px solid $secondary;
-          padding: 0.5rem 0;    
+          padding: 0.5rem 0;
         }
       }
     }
@@ -95,19 +95,18 @@ $navbar-height: 112px;
     background-color: $neutral-01;
     padding: 20px;
     transform: translateX(-100%);
-    
+
     &__show {
       transform: translateX(0);
       box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
     }
-    
+
     @media screen and (min-width: 768px) {
       box-shadow: none;
       flex-direction: row;
       transform: translateX(0);
       gap: 1.5rem;
     }
-
 
     .dropdown-menu {
       display: none;
@@ -119,21 +118,20 @@ $navbar-height: 112px;
         &:hover {
           color: $secondary;
         }
-  
       }
 
       &__show {
         display: flex;
         margin-top: 0.5rem;
         background-color: $neutral-01;
-      }  
-      
+      }
+
       @media screen and (min-width: 768px) {
         position: absolute;
         margin: 0;
         padding: 1rem;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-      }  
+      }
     }
   }
 }

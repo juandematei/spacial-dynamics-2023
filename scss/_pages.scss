@@ -11,24 +11,34 @@
     color: $neutral-10;
     position: sticky;
     top: $navbar-height;
-    z-index: 1;
+    z-index: 998;
     margin: 0;
     padding: 0.5rem 20px;
-    overflow: hidden;
-    text-overflow: ellipsis;
 
     ol {
       list-style: none;
-      white-space: nowrap;
       font-size: 0.9rem;
-      max-width: 960px;
       margin: 0 auto;
+      white-space: nowrap;
+      max-width: 960px;
 
       li {
         display: inline-block;
+        vertical-align: middle;
+
+        &:nth-child(2) {
+          width: 32px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+
+          @media screen and (min-width: 768px) {
+            width: auto;
+          }
+        }
 
         + li:before {
-          padding: 0.25rem;
+          margin: 0 4px;
           content: '/\00a0';
         }
 

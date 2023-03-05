@@ -186,7 +186,7 @@ a {
   height: 112px;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 999;
 }
 @media screen and (min-width: 768px) {
   .main-nav {
@@ -236,7 +236,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  z-index: 3;
+  z-index: 1000;
 }
 @media screen and (min-width: 768px) {
   .main-nav .toggle-menu {
@@ -414,6 +414,7 @@ main ul.no-style {
 }
 .image-slider figure {
   width: 300%;
+  height: 250px;
   position: relative;
   -webkit-animation: 10s slider infinite;
           animation: 10s slider infinite;
@@ -429,6 +430,8 @@ main ul.no-style {
   width: 33.33333333%;
   height: 100%;
   float: left;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @-webkit-keyframes slider {
   0% {
@@ -520,6 +523,38 @@ main ul.no-style {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+.video-container .play-button {
+  background-color: rgba(9, 12, 8, 0.3);
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.video-container .play-button .fa-circle-play {
+  width: 80px;
+  height: 80px;
 }
 .video-container video {
   -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -632,24 +667,34 @@ main ul.no-style {
   color: #090C08;
   position: sticky;
   top: 112px;
-  z-index: 1;
+  z-index: 998;
   margin: 0;
   padding: 0.5rem 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .pages .breadcrumb ol {
   list-style: none;
-  white-space: nowrap;
   font-size: 0.9rem;
-  max-width: 960px;
   margin: 0 auto;
+  white-space: nowrap;
+  max-width: 960px;
 }
 .pages .breadcrumb ol li {
   display: inline-block;
+  vertical-align: middle;
+}
+.pages .breadcrumb ol li:nth-child(2) {
+  width: 32px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media screen and (min-width: 768px) {
+  .pages .breadcrumb ol li:nth-child(2) {
+    width: auto;
+  }
 }
 .pages .breadcrumb ol li + li:before {
-  padding: 0.25rem;
+  margin: 0 4px;
   content: "/ ";
 }
 .pages .breadcrumb ol li a {
@@ -806,7 +851,7 @@ main ul.no-style {
       -ms-flex-align: center;
           align-items: center;
 }
-.footer .social-links a svg {
+.footer .social-links a i {
   color: #323EEC;
   font-size: 1.2rem;
   text-align: center;
