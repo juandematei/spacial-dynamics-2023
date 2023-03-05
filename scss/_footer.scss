@@ -40,7 +40,6 @@
   .contact,
   .sitemap,
   .author {
-    width: 100%;
     padding: 0 20px;
   }
 
@@ -90,6 +89,7 @@
         font-size: 1rem;
         border: none;
         outline: none;
+        width: 100%;
       }
 
       input,
