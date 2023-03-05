@@ -184,10 +184,9 @@ a {
   -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
           box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   height: 112px;
-  position: fixed;
+  position: sticky;
+  position: -webkit-sticky;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 999;
 }
 @media screen and (min-width: 768px) {
