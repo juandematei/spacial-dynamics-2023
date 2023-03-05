@@ -184,8 +184,10 @@ a {
   -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
           box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   height: 112px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 999;
 }
 @media screen and (min-width: 768px) {
@@ -350,7 +352,7 @@ a {
 
 .hero {
   background-color: #323EEC;
-  background-image: url(../images/header-bg.jpg);
+  background-image: url(../images/min/header-bg.jpg);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -508,9 +510,10 @@ main ul.no-style {
   overflow: hidden;
   position: relative;
 }
-.image-container .circle-img img {
-  width: auto;
+.image-container .circle-img .portrait {
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .video-container {
@@ -553,8 +556,7 @@ main ul.no-style {
   z-index: 1;
 }
 .video-container .play-button .fa-circle-play {
-  width: 80px;
-  height: 80px;
+  font-size: 4rem;
 }
 .video-container video {
   -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
