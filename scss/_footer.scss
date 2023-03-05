@@ -112,6 +112,10 @@
 
   .sitemap {
     grid-area: sitemap;
+
+    h4 {
+      font-size: 1rem;
+    }
     &-links {
       list-style: none;
 
@@ -121,6 +125,10 @@
 
       &__group {
         list-style: none;
+
+        li {
+          padding: 8px 0;
+        }
       }
     }
   }

@@ -818,6 +818,9 @@ main ul.no-style {
 .footer .sitemap {
   grid-area: sitemap;
 }
+.footer .sitemap h4 {
+  font-size: 1rem;
+}
 .footer .sitemap-links {
   list-style: none;
 }
@@ -826,6 +829,9 @@ main ul.no-style {
 }
 .footer .sitemap-links__group {
   list-style: none;
+}
+.footer .sitemap-links__group li {
+  padding: 8px 0;
 }
 .footer .social {
   grid-area: social;
