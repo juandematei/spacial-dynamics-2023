@@ -7,9 +7,10 @@
   background-repeat: no-repeat;
   color: $neutral-01;
   box-shadow: 50px 0px 100px 10px $neutral-10 inset;
-  min-height: 400px;
   display: flex;
   justify-content: center;
+  /* prettier-ignore */
+  min-height: calc(100vh - $navbar-height);
 
   &-content {
     padding: 2rem 20px;
