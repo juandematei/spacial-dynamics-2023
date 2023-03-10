@@ -6,11 +6,10 @@
   background-position: left;
   background-repeat: no-repeat;
   color: $neutral-01;
-  box-shadow: 50px 0px 100px 10px $neutral-10 inset;
+  //box-shadow: 50px 0px 100px 10px $neutral-10 inset;
   display: flex;
   justify-content: center;
-  /* prettier-ignore */
-  min-height: calc(100vh - $navbar-height);
+  padding: 100px 0;
 
   &-content {
     padding: 2rem 20px;
