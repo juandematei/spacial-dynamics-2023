@@ -586,6 +586,37 @@ main ul.no-style {
   color: #FFFFFF;
 }
 
+#novedades .article {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 4px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#novedades .article__content {
+  padding: 1rem;
+}
+#novedades .article__content-title {
+  font-size: 1.4rem;
+}
+#novedades .article__content-subtitle {
+  font-size: 1.2rem;
+}
+#novedades .article__content-data {
+  font-size: 0.8rem;
+  color: #40423F;
+}
+#novedades .article__content a {
+  color: #323EEC;
+}
+
 .accordion {
   list-style: none;
   padding: 0 20px;
