@@ -159,6 +159,53 @@ main {
 }
 
 #novedades {
+  .article-list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacer;
+
+    .article {
+      background-color: $neutral-01;
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+      border-radius: 4px;
+      padding: 2rem;
+      overflow: hidden;
+      max-height: 300px;
+      position: relative;
+
+      &__content {
+        &-data {
+          display: none;
+        }
+
+        .sharethis-inline-share-buttons {
+          display: none;
+        }
+      }
+
+      &__keep-reading {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 6rem 0 2rem 0;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        a {
+          text-transform: uppercase;
+          font-weight: 600;
+          transition: $transition;
+          &:hover {
+            color: darken($primary, $amount: 25%);
+          }
+        }
+      }
+    }
+  }
   .article {
     display: flex;
     flex-direction: column;
