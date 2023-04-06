@@ -19,8 +19,9 @@
     grid-template-areas:
       'logo logo'
       'contact sitemap'
-      'social social'
+      'contact social'
       'author author';
+    gap: 3rem 6rem;
   }
 
   h2,
@@ -30,17 +31,17 @@
 
   a {
     text-decoration: underline;
-    text-decoration-style: dotted;
-
-    &:hover {
-      text-decoration-style: solid;
-    }
+    text-decoration-style: solid;
   }
 
   .contact,
   .sitemap,
   .author {
     padding: 0 20px;
+
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
   }
 
   .contact,
@@ -106,6 +107,7 @@
         font-weight: 600;
         letter-spacing: 0.25rem;
         text-transform: uppercase;
+        cursor: pointer;
       }
     }
   }
@@ -122,19 +124,16 @@
       > li {
         margin-bottom: 0.5rem;
       }
-
-      &__group {
-        list-style: none;
-
-        li {
-          padding: 8px 0;
-        }
-      }
     }
   }
 
   .social {
     grid-area: social;
+
+    @media screen and (min-width: 768px) {
+      justify-content: flex-start;
+    }
+
     &-links {
       list-style: none;
       display: inline-flex;
@@ -147,6 +146,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: $transition;
 
         i {
           color: $primary;
