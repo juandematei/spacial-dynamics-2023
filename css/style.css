@@ -817,6 +817,10 @@ main ul.no-style {
     padding: 3rem;
   }
 }
+.accordion-item .image-container {
+  width: 100%;
+  height: 288px;
+}
 .accordion-item label {
   cursor: pointer;
   display: block;
