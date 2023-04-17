@@ -474,7 +474,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 100px 0;
+  padding: 150px 0;
 }
 .hero-content {
   padding: 2rem 20px;
@@ -811,6 +811,7 @@ main ul.no-style {
   border-radius: 4px;
   background-color: #FFFFFF;
   padding: 1rem;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .accordion-item {
@@ -830,6 +831,10 @@ main ul.no-style {
 }
 .accordion-item input[type=checkbox] {
   display: none;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 40px;
 }
 .accordion-item-content {
   max-height: 0;
@@ -858,6 +863,12 @@ main ul.no-style {
   z-index: 998;
   margin: 0;
   padding: 0.5rem 20px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .pages .breadcrumb {
+    display: block;
+  }
 }
 .pages .breadcrumb ol {
   list-style: none;
